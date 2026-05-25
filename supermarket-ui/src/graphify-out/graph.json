@@ -1,0 +1,637 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\App.tsx",
+      "source_location": "L1",
+      "id": "app_tsx",
+      "community": 3,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\App.tsx",
+      "source_location": "L5",
+      "id": "app_app",
+      "community": 3,
+      "norm_label": "app()"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\main.tsx",
+      "source_location": "L1",
+      "id": "main_tsx",
+      "community": 3,
+      "norm_label": "main.tsx"
+    },
+    {
+      "label": "ProtectedRoute.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ProtectedRoute.tsx",
+      "source_location": "L1",
+      "id": "components_protectedroute_tsx",
+      "community": 5,
+      "norm_label": "protectedroute.tsx"
+    },
+    {
+      "label": "ProtectedRoute()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ProtectedRoute.tsx",
+      "source_location": "L10",
+      "id": "protectedroute_protectedroute",
+      "community": 5,
+      "norm_label": "protectedroute()"
+    },
+    {
+      "label": "ProductForm.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\admin\\inventory\\ProductForm.tsx",
+      "source_location": "L1",
+      "id": "components_admin_inventory_productform_tsx",
+      "community": 6,
+      "norm_label": "productform.tsx"
+    },
+    {
+      "label": "ProductForm()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\admin\\inventory\\ProductForm.tsx",
+      "source_location": "L12",
+      "id": "productform_productform",
+      "community": 6,
+      "norm_label": "productform()"
+    },
+    {
+      "label": "ProductTable.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\admin\\inventory\\ProductTable.tsx",
+      "source_location": "L1",
+      "id": "components_admin_inventory_producttable_tsx",
+      "community": 13,
+      "norm_label": "producttable.tsx"
+    },
+    {
+      "label": "OrderList.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\admin\\orders\\OrderList.tsx",
+      "source_location": "L1",
+      "id": "components_admin_orders_orderlist_tsx",
+      "community": 7,
+      "norm_label": "orderlist.tsx"
+    },
+    {
+      "label": "getStatusIcon()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\admin\\orders\\OrderList.tsx",
+      "source_location": "L26",
+      "id": "orderlist_getstatusicon",
+      "community": 7,
+      "norm_label": "getstatusicon()"
+    },
+    {
+      "label": "badge.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\badge.tsx",
+      "source_location": "L1",
+      "id": "components_ui_badge_tsx",
+      "community": 1,
+      "norm_label": "badge.tsx"
+    },
+    {
+      "label": "Badge()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\badge.tsx",
+      "source_location": "L30",
+      "id": "badge_badge",
+      "community": 1,
+      "norm_label": "badge()"
+    },
+    {
+      "label": "button.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\button.tsx",
+      "source_location": "L1",
+      "id": "components_ui_button_tsx",
+      "community": 8,
+      "norm_label": "button.tsx"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\button.tsx",
+      "source_location": "L52",
+      "id": "button_cn",
+      "community": 8,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "card.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\card.tsx",
+      "source_location": "L1",
+      "id": "components_ui_card_tsx",
+      "community": 4,
+      "norm_label": "card.tsx"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\card.tsx",
+      "source_location": "L14",
+      "id": "card_cn",
+      "community": 4,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "CardAction()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\card.tsx",
+      "source_location": "L59",
+      "id": "card_cardaction",
+      "community": 4,
+      "norm_label": "cardaction()"
+    },
+    {
+      "label": "dropdown-menu.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\dropdown-menu.tsx",
+      "source_location": "L1",
+      "id": "components_ui_dropdown_menu_tsx",
+      "community": 0,
+      "norm_label": "dropdown-menu.tsx"
+    },
+    {
+      "label": "DropdownMenu()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\dropdown-menu.tsx",
+      "source_location": "L7",
+      "id": "dropdown_menu_dropdownmenu",
+      "community": 0,
+      "norm_label": "dropdownmenu()"
+    },
+    {
+      "label": "DropdownMenuPortal()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\dropdown-menu.tsx",
+      "source_location": "L11",
+      "id": "dropdown_menu_dropdownmenuportal",
+      "community": 0,
+      "norm_label": "dropdownmenuportal()"
+    },
+    {
+      "label": "DropdownMenuTrigger()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\dropdown-menu.tsx",
+      "source_location": "L15",
+      "id": "dropdown_menu_dropdownmenutrigger",
+      "community": 0,
+      "norm_label": "dropdownmenutrigger()"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\dropdown-menu.tsx",
+      "source_location": "L42",
+      "id": "dropdown_menu_cn",
+      "community": 0,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "DropdownMenuCheckboxItem()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\dropdown-menu.tsx",
+      "source_location": "L146",
+      "id": "dropdown_menu_dropdownmenucheckboxitem",
+      "community": 0,
+      "norm_label": "dropdownmenucheckboxitem()"
+    },
+    {
+      "label": "input.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\input.tsx",
+      "source_location": "L1",
+      "id": "components_ui_input_tsx",
+      "community": 9,
+      "norm_label": "input.tsx"
+    },
+    {
+      "label": "Input()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\input.tsx",
+      "source_location": "L6",
+      "id": "input_input",
+      "community": 9,
+      "norm_label": "input()"
+    },
+    {
+      "label": "separator.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\separator.tsx",
+      "source_location": "L1",
+      "id": "components_ui_separator_tsx",
+      "community": 10,
+      "norm_label": "separator.tsx"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\components\\ui\\separator.tsx",
+      "source_location": "L16",
+      "id": "separator_cn",
+      "community": 10,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\lib\\utils.ts",
+      "source_location": "L1",
+      "id": "lib_utils_ts",
+      "community": 1,
+      "norm_label": "utils.ts"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\lib\\utils.ts",
+      "source_location": "L4",
+      "id": "utils_cn",
+      "community": 1,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "HomePage.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\pages\\HomePage.tsx",
+      "source_location": "L1",
+      "id": "pages_homepage_tsx",
+      "community": 14,
+      "norm_label": "homepage.tsx"
+    },
+    {
+      "label": "AdminDashboard.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\pages\\admin\\AdminDashboard.tsx",
+      "source_location": "L1",
+      "id": "pages_admin_admindashboard_tsx",
+      "community": 2,
+      "norm_label": "admindashboard.tsx"
+    },
+    {
+      "label": "handleLogout()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\pages\\admin\\AdminDashboard.tsx",
+      "source_location": "L51",
+      "id": "admindashboard_handlelogout",
+      "community": 2,
+      "norm_label": "handlelogout()"
+    },
+    {
+      "label": "handleProductSubmit()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\pages\\admin\\AdminDashboard.tsx",
+      "source_location": "L56",
+      "id": "admindashboard_handleproductsubmit",
+      "community": 2,
+      "norm_label": "handleproductsubmit()"
+    },
+    {
+      "label": "handleOrderStatusChange()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\pages\\admin\\AdminDashboard.tsx",
+      "source_location": "L67",
+      "id": "admindashboard_handleorderstatuschange",
+      "community": 2,
+      "norm_label": "handleorderstatuschange()"
+    },
+    {
+      "label": "AdminLogin.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\pages\\admin\\AdminLogin.tsx",
+      "source_location": "L1",
+      "id": "pages_admin_adminlogin_tsx",
+      "community": 11,
+      "norm_label": "adminlogin.tsx"
+    },
+    {
+      "label": "AdminLogin()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\pages\\admin\\AdminLogin.tsx",
+      "source_location": "L8",
+      "id": "adminlogin_adminlogin",
+      "community": 11,
+      "norm_label": "adminlogin()"
+    },
+    {
+      "label": "AdminRoutes.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\routes\\AdminRoutes.tsx",
+      "source_location": "L1",
+      "id": "routes_adminroutes_tsx",
+      "community": 15,
+      "norm_label": "adminroutes.tsx"
+    },
+    {
+      "label": "CustomerRoutes.tsx",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\routes\\CustomerRoutes.tsx",
+      "source_location": "L1",
+      "id": "routes_customerroutes_tsx",
+      "community": 12,
+      "norm_label": "customerroutes.tsx"
+    },
+    {
+      "label": "CustomerRoutes()",
+      "file_type": "code",
+      "source_file": "supermarket-ui\\src\\routes\\CustomerRoutes.tsx",
+      "source_location": "L4",
+      "id": "customerroutes_customerroutes",
+      "community": 12,
+      "norm_label": "customerroutes()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_src": "app_tsx",
+      "_tgt": "app_app",
+      "source": "app_tsx",
+      "target": "app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\main.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_src": "main_tsx",
+      "_tgt": "app_tsx",
+      "source": "app_tsx",
+      "target": "main_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ProtectedRoute.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "components_protectedroute_tsx",
+      "_tgt": "protectedroute_protectedroute",
+      "source": "components_protectedroute_tsx",
+      "target": "protectedroute_protectedroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\admin\\inventory\\ProductForm.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_src": "components_admin_inventory_productform_tsx",
+      "_tgt": "productform_productform",
+      "source": "components_admin_inventory_productform_tsx",
+      "target": "productform_productform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\admin\\orders\\OrderList.tsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_src": "components_admin_orders_orderlist_tsx",
+      "_tgt": "orderlist_getstatusicon",
+      "source": "components_admin_orders_orderlist_tsx",
+      "target": "orderlist_getstatusicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ui\\badge.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_src": "components_ui_badge_tsx",
+      "_tgt": "badge_badge",
+      "source": "components_ui_badge_tsx",
+      "target": "badge_badge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "supermarket-ui\\src\\components\\ui\\badge.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_src": "badge_badge",
+      "_tgt": "utils_cn",
+      "source": "badge_badge",
+      "target": "utils_cn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ui\\button.tsx",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_src": "components_ui_button_tsx",
+      "_tgt": "button_cn",
+      "source": "components_ui_button_tsx",
+      "target": "button_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ui\\card.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_src": "components_ui_card_tsx",
+      "_tgt": "card_cn",
+      "source": "components_ui_card_tsx",
+      "target": "card_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ui\\card.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_src": "components_ui_card_tsx",
+      "_tgt": "card_cardaction",
+      "source": "components_ui_card_tsx",
+      "target": "card_cardaction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ui\\dropdown-menu.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_src": "components_ui_dropdown_menu_tsx",
+      "_tgt": "dropdown_menu_dropdownmenu",
+      "source": "components_ui_dropdown_menu_tsx",
+      "target": "dropdown_menu_dropdownmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ui\\dropdown-menu.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "components_ui_dropdown_menu_tsx",
+      "_tgt": "dropdown_menu_dropdownmenuportal",
+      "source": "components_ui_dropdown_menu_tsx",
+      "target": "dropdown_menu_dropdownmenuportal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ui\\dropdown-menu.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "components_ui_dropdown_menu_tsx",
+      "_tgt": "dropdown_menu_dropdownmenutrigger",
+      "source": "components_ui_dropdown_menu_tsx",
+      "target": "dropdown_menu_dropdownmenutrigger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ui\\dropdown-menu.tsx",
+      "source_location": "L241",
+      "weight": 1.0,
+      "_src": "components_ui_dropdown_menu_tsx",
+      "_tgt": "dropdown_menu_cn",
+      "source": "components_ui_dropdown_menu_tsx",
+      "target": "dropdown_menu_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ui\\dropdown-menu.tsx",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_src": "components_ui_dropdown_menu_tsx",
+      "_tgt": "dropdown_menu_dropdownmenucheckboxitem",
+      "source": "components_ui_dropdown_menu_tsx",
+      "target": "dropdown_menu_dropdownmenucheckboxitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ui\\input.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "components_ui_input_tsx",
+      "_tgt": "input_input",
+      "source": "components_ui_input_tsx",
+      "target": "input_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\components\\ui\\separator.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "components_ui_separator_tsx",
+      "_tgt": "separator_cn",
+      "source": "components_ui_separator_tsx",
+      "target": "separator_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\lib\\utils.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "lib_utils_ts",
+      "_tgt": "utils_cn",
+      "source": "lib_utils_ts",
+      "target": "utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\pages\\admin\\AdminDashboard.tsx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_src": "pages_admin_admindashboard_tsx",
+      "_tgt": "admindashboard_handlelogout",
+      "source": "pages_admin_admindashboard_tsx",
+      "target": "admindashboard_handlelogout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\pages\\admin\\AdminDashboard.tsx",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_src": "pages_admin_admindashboard_tsx",
+      "_tgt": "admindashboard_handleproductsubmit",
+      "source": "pages_admin_admindashboard_tsx",
+      "target": "admindashboard_handleproductsubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\pages\\admin\\AdminDashboard.tsx",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_src": "pages_admin_admindashboard_tsx",
+      "_tgt": "admindashboard_handleorderstatuschange",
+      "source": "pages_admin_admindashboard_tsx",
+      "target": "admindashboard_handleorderstatuschange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\pages\\admin\\AdminLogin.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_src": "pages_admin_adminlogin_tsx",
+      "_tgt": "adminlogin_adminlogin",
+      "source": "pages_admin_adminlogin_tsx",
+      "target": "adminlogin_adminlogin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "supermarket-ui\\src\\routes\\CustomerRoutes.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "routes_customerroutes_tsx",
+      "_tgt": "customerroutes_customerroutes",
+      "source": "routes_customerroutes_tsx",
+      "target": "customerroutes_customerroutes",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

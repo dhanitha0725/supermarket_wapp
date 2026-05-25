@@ -1,0 +1,14 @@
+# Standard ignores
+node_modules/
+dist/
+graphify-out/
+.git/
+*.generated.py
+.env
+.DS_Store
+
+# Documentation and design system files to keep
+# (Matches user's intent to focus on source but keep high-level docs)
+!README.md
+!DESIGN.md
+!design-system/

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Product } from './ProductTable';
+import type { Product } from './ProductTable';
 
 interface ProductFormProps {
   initialData?: Product;

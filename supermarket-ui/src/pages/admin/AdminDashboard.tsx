@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import { ShoppingBag, Package, LogOut, LayoutDashboard, ListOrdered, Settings } from 'lucide-react';
+import { ShoppingBag, Package, LogOut, ListOrdered } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
-import { ProductTable, Product } from '@/components/admin/inventory/ProductTable';
+import { ProductTable } from '@/components/admin/inventory/ProductTable';
+import type { Product } from '@/components/admin/inventory/ProductTable';
 import { ProductForm } from '@/components/admin/inventory/ProductForm';
-import { OrderList, Order } from '@/components/admin/orders/OrderList';
+import { OrderList } from '@/components/admin/orders/OrderList';
+import type { Order } from '@/components/admin/orders/OrderList';
 
 // Mock Data
 const MOCK_PRODUCTS: Product[] = [

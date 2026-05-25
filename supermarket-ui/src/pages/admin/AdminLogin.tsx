@@ -27,7 +27,7 @@ export default function AdminLogin() {
       } else {
         setError('Invalid username or password');
       }
-    } catch (err) {
+    } catch {
       setError('Failed to connect to server');
     }
   };
