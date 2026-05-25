@@ -6,6 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'Shop', path: '/shop' },
+  { name: 'Food', path: '/category/food' },
   { name: 'Fruits', path: '/category/fruits' },
   { name: 'Vegetables', path: '/category/vegetables' },
   { name: 'Beverages', path: '/category/beverages' },
