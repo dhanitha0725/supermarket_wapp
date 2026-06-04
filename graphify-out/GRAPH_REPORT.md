@@ -1,54 +1,60 @@
-# Graph Report - .  (2026-05-26)
+# Graph Report - .  (2026-06-05)
 
 ## Corpus Check
-- Corpus is ~21,229 words - fits in a single context window. You may not need a graph.
+- 68 files · ~50,549 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 135 nodes · 82 edges · 40 communities detected
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.82)
+- 163 nodes · 90 edges · 45 communities detected
+- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Admin Dashboard & Mocks|Admin Dashboard & Mocks]]
-- [[_COMMUNITY_Shop & Category Pages|Shop & Category Pages]]
-- [[_COMMUNITY_UI Dropdown Menu|UI: Dropdown Menu]]
-- [[_COMMUNITY_UI Badge Component|UI: Badge Component]]
-- [[_COMMUNITY_Design System Master|Design System: Master]]
-- [[_COMMUNITY_Admin Logic|Admin Logic]]
-- [[_COMMUNITY_App Entry & Core|App Entry & Core]]
-- [[_COMMUNITY_UI Card Component|UI: Card Component]]
-- [[_COMMUNITY_Order Management|Order Management]]
-- [[_COMMUNITY_UI Button Component|UI: Button Component]]
-- [[_COMMUNITY_UI Input Component|UI: Input Component]]
-- [[_COMMUNITY_UI Separator Component|UI: Separator Component]]
-- [[_COMMUNITY_Auth Login View|Auth: Login View]]
-- [[_COMMUNITY_Build Dependencies|Build: Dependencies]]
-- [[_COMMUNITY_Auth Protected Routes|Auth: Protected Routes]]
-- [[_COMMUNITY_Routing Customer|Routing: Customer]]
-- [[_COMMUNITY_UI Hero Section|UI: Hero Section]]
-- [[_COMMUNITY_UI Promotional Banners|UI: Promotional Banners]]
-- [[_COMMUNITY_UI Floating Action Button|UI: Floating Action Button]]
-- [[_COMMUNITY_Marketing About Page|Marketing: About Page]]
-- [[_COMMUNITY_Design CTA & Accents|Design: CTA & Accents]]
-- [[_COMMUNITY_Design Rewards|Design: Rewards]]
-- [[_COMMUNITY_DOM Mounting|DOM Mounting]]
-- [[_COMMUNITY_Assets Hero Image|Assets: Hero Image]]
-- [[_COMMUNITY_Build Vite Tools|Build: Vite Tools]]
-- [[_COMMUNITY_Community 37|Community 37]]
-- [[_COMMUNITY_Community 38|Community 38]]
-- [[_COMMUNITY_Community 39|Community 39]]
-- [[_COMMUNITY_Community 40|Community 40]]
+- [[_COMMUNITY_Admin Dashboard & Product Management|Admin Dashboard & Product Management]]
+- [[_COMMUNITY_Product Catalog & Shop Views|Product Catalog & Shop Views]]
+- [[_COMMUNITY_UI Dropdown Components|UI Dropdown Components]]
+- [[_COMMUNITY_UI Badge & Utility Functions|UI Badge & Utility Functions]]
+- [[_COMMUNITY_Brand Design System (Starbucks Style)|Brand Design System (Starbucks Style)]]
+- [[_COMMUNITY_Admin Actions & Data Flow|Admin Actions & Data Flow]]
+- [[_COMMUNITY_Application Shell & Main Entry|Application Shell & Main Entry]]
+- [[_COMMUNITY_UI Card Layouts|UI Card Layouts]]
+- [[_COMMUNITY_Admin Order Management|Admin Order Management]]
+- [[_COMMUNITY_UI Button Components|UI Button Components]]
+- [[_COMMUNITY_UI Input Components|UI Input Components]]
+- [[_COMMUNITY_UI Separator Components|UI Separator Components]]
+- [[_COMMUNITY_Admin Authentication|Admin Authentication]]
+- [[_COMMUNITY_Customer Homepage|Customer Homepage]]
+- [[_COMMUNITY_Development Stack Logos|Development Stack Logos]]
+- [[_COMMUNITY_Routing Security & Guards|Routing Security & Guards]]
+- [[_COMMUNITY_Customer-Facing Routes|Customer-Facing Routes]]
+- [[_COMMUNITY_Hero Section Components|Hero Section Components]]
+- [[_COMMUNITY_Promotional Marketing Banners|Promotional Marketing Banners]]
+- [[_COMMUNITY_Interactive Frap UI|Interactive Frap UI]]
+- [[_COMMUNITY_About Us Content|About Us Content]]
+- [[_COMMUNITY_Storybook Component Documentation|Storybook Component Documentation]]
+- [[_COMMUNITY_System Requirements & Technical Specs|System Requirements & Technical Specs]]
+- [[_COMMUNITY_Brand Green Accents|Brand Green Accents]]
+- [[_COMMUNITY_Loyalty & Rewards Visuals|Loyalty & Rewards Visuals]]
+- [[_COMMUNITY_React DOM Initialization|React DOM Initialization]]
+- [[_COMMUNITY_Visual Hero Assets|Visual Hero Assets]]
+- [[_COMMUNITY_Vite Framework Boilerplate|Vite Framework Boilerplate]]
+- [[_COMMUNITY_Order Workflow & WhatsApp Integration|Order Workflow & WhatsApp Integration]]
+- [[_COMMUNITY_Product Data & Schema Definition|Product Data & Schema Definition]]
 - [[_COMMUNITY_Community 41|Community 41]]
 - [[_COMMUNITY_Community 42|Community 42]]
 - [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Community 44|Community 44]]
+- [[_COMMUNITY_Community 45|Community 45]]
 - [[_COMMUNITY_Community 46|Community 46]]
 - [[_COMMUNITY_Community 47|Community 47]]
-- [[_COMMUNITY_Community 48|Community 48]]
-- [[_COMMUNITY_Community 49|Community 49]]
 - [[_COMMUNITY_Community 50|Community 50]]
 - [[_COMMUNITY_Community 51|Community 51]]
 - [[_COMMUNITY_Community 52|Community 52]]
 - [[_COMMUNITY_Community 53|Community 53]]
+- [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Community 55|Community 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `AdminDashboard Component` - 5 edges
@@ -74,242 +80,273 @@
 - `Badge()` --calls--> `cn()`  [INFERRED]
   D:\supermarket\supermarket-ui\src\components\ui\badge.tsx → D:\supermarket\supermarket-ui\src\lib\utils.ts
 
+## Hyperedges (group relationships)
+- **Supermarket System Definition** — requirements_core_purpose, requirements_product_management, requirements_customer_workflow, requirements_whatsapp_integration, requirements_technical_constraints [EXTRACTED 1.00]
+
 ## Communities
 
-### Community 0 - "Admin Dashboard & Mocks"
+### Community 0 - "Admin Dashboard & Product Management"
 Cohesion: 0.25
 Nodes (7): AdminDashboard Component, MOCK_ORDERS, MOCK_PRODUCTS, handleLogin Function, Order Interface, OrderList Component, ProductForm()
 
-### Community 1 - "Shop & Category Pages"
+### Community 1 - "Product Catalog & Shop Views"
 Cohesion: 0.28
 Nodes (8): CategoryPage Component, Mock Products Data, Header Component, Pagination Component, ProductCard Component, ProductGrid Component, Mock Products Data, ShopPage()
 
-### Community 2 - "UI: Dropdown Menu"
+### Community 2 - "UI Dropdown Components"
 Cohesion: 0.48
 Nodes (5): cn(), DropdownMenu(), DropdownMenuCheckboxItem(), DropdownMenuPortal(), DropdownMenuTrigger()
 
-### Community 3 - "UI: Badge Component"
+### Community 3 - "UI Badge & Utility Functions"
 Cohesion: 0.33
 Nodes (2): Badge(), cn()
 
-### Community 4 - "Design System: Master"
+### Community 4 - "Brand Design System (Starbucks Style)"
 Cohesion: 0.33
 Nodes (6): Confident Friendly Voice, SoDoSans Typeface, Starbucks Design System, Frap Floating Button, SoDoSans Typeface, Starbucks Green Color
 
-### Community 5 - "Admin Logic"
+### Community 5 - "Admin Actions & Data Flow"
 Cohesion: 0.6
 Nodes (3): handleLogout(), handleOrderStatusChange(), handleProductSubmit()
 
-### Community 6 - "App Entry & Core"
+### Community 6 - "Application Shell & Main Entry"
 Cohesion: 0.4
 Nodes (1): App()
 
-### Community 7 - "UI: Card Component"
+### Community 7 - "UI Card Layouts"
 Cohesion: 0.67
 Nodes (2): CardAction(), cn()
 
-### Community 8 - "Order Management"
+### Community 8 - "Admin Order Management"
 Cohesion: 0.67
 Nodes (1): getStatusIcon()
 
-### Community 9 - "UI: Button Component"
+### Community 9 - "UI Button Components"
 Cohesion: 0.67
 Nodes (1): cn()
 
-### Community 10 - "UI: Input Component"
+### Community 10 - "UI Input Components"
 Cohesion: 0.67
 Nodes (1): Input()
 
-### Community 11 - "UI: Separator Component"
+### Community 11 - "UI Separator Components"
 Cohesion: 0.67
 Nodes (1): cn()
 
-### Community 12 - "Auth: Login View"
+### Community 12 - "Admin Authentication"
 Cohesion: 0.67
 Nodes (1): AdminLogin()
 
-### Community 13 - "Build: Dependencies"
+### Community 13 - "Customer Homepage"
+Cohesion: 0.67
+Nodes (1): HomePage()
+
+### Community 14 - "Development Stack Logos"
 Cohesion: 0.67
 Nodes (3): React Logo, @vitejs/plugin-react, Vite Logo
 
-### Community 14 - "Auth: Protected Routes"
+### Community 15 - "Routing Security & Guards"
 Cohesion: 0.67
 Nodes (1): ProtectedRoute()
 
-### Community 15 - "Routing: Customer"
+### Community 16 - "Customer-Facing Routes"
 Cohesion: 0.67
 Nodes (1): CustomerRoutes()
 
-### Community 16 - "UI: Hero Section"
+### Community 17 - "Hero Section Components"
 Cohesion: 0.67
 Nodes (1): Hero()
 
-### Community 17 - "UI: Promotional Banners"
+### Community 18 - "Promotional Marketing Banners"
 Cohesion: 0.67
 Nodes (1): PromotionalBanners()
 
-### Community 18 - "UI: Floating Action Button"
+### Community 19 - "Interactive Frap UI"
 Cohesion: 0.67
 Nodes (1): FrapButton()
 
-### Community 19 - "Marketing: About Page"
+### Community 20 - "About Us Content"
 Cohesion: 0.67
 Nodes (1): AboutPage()
 
-### Community 20 - "Design: CTA & Accents"
+### Community 21 - "Storybook Component Documentation"
+Cohesion: 0.67
+Nodes (1): Button()
+
+### Community 22 - "System Requirements & Technical Specs"
+Cohesion: 0.67
+Nodes (3): Storybook Configuration, React Root, Core Purpose
+
+### Community 23 - "Brand Green Accents"
 Cohesion: 1.0
 Nodes (2): Frap Floating CTA, Green Accent
 
-### Community 21 - "Design: Rewards"
+### Community 24 - "Loyalty & Rewards Visuals"
 Cohesion: 1.0
 Nodes (2): Gold, Rewards Ceremony
 
-### Community 22 - "DOM Mounting"
+### Community 25 - "React DOM Initialization"
 Cohesion: 1.0
 Nodes (2): main.tsx, root div
 
-### Community 23 - "Assets: Hero Image"
+### Community 26 - "Visual Hero Assets"
 Cohesion: 1.0
 Nodes (1): Stacked Platforms Visual
 
-### Community 24 - "Build: Vite Tools"
+### Community 27 - "Vite Framework Boilerplate"
 Cohesion: 1.0
 Nodes (2): Vite SVG Logo, Vite Framework
 
-### Community 37 - "Community 37"
+### Community 28 - "Order Workflow & WhatsApp Integration"
 Cohesion: 1.0
-Nodes (1): Starbucks Green
+Nodes (2): Customer Workflow & Ordering, WhatsApp Integration
 
-### Community 38 - "Community 38"
+### Community 29 - "Product Data & Schema Definition"
 Cohesion: 1.0
-Nodes (1): ESLint Configuration
-
-### Community 39 - "Community 39"
-Cohesion: 1.0
-Nodes (1): Base64 Design System
-
-### Community 40 - "Community 40"
-Cohesion: 1.0
-Nodes (1): Wrapped Base64 Design System
+Nodes (2): Product Management (Admin), Technical Constraints
 
 ### Community 41 - "Community 41"
 Cohesion: 1.0
-Nodes (1): Favicon
+Nodes (1): Starbucks Green
 
 ### Community 42 - "Community 42"
 Cohesion: 1.0
-Nodes (1): Icons Spritesheet
+Nodes (1): ESLint Configuration
 
 ### Community 43 - "Community 43"
 Cohesion: 1.0
-Nodes (1): Hero Image
+Nodes (1): Base64 Design System
+
+### Community 44 - "Community 44"
+Cohesion: 1.0
+Nodes (1): Wrapped Base64 Design System
+
+### Community 45 - "Community 45"
+Cohesion: 1.0
+Nodes (1): Favicon
 
 ### Community 46 - "Community 46"
 Cohesion: 1.0
-Nodes (1): Application Favicon
+Nodes (1): Icons Spritesheet
 
 ### Community 47 - "Community 47"
 Cohesion: 1.0
-Nodes (1): Bluesky Icon
-
-### Community 48 - "Community 48"
-Cohesion: 1.0
-Nodes (1): Discord Icon
-
-### Community 49 - "Community 49"
-Cohesion: 1.0
-Nodes (1): Documentation Icon
+Nodes (1): Hero Image
 
 ### Community 50 - "Community 50"
 Cohesion: 1.0
-Nodes (1): GitHub Icon
+Nodes (1): Application Favicon
 
 ### Community 51 - "Community 51"
 Cohesion: 1.0
-Nodes (1): Social Icon
+Nodes (1): Bluesky Icon
 
 ### Community 52 - "Community 52"
 Cohesion: 1.0
-Nodes (1): X (Twitter) Icon
+Nodes (1): Discord Icon
 
 ### Community 53 - "Community 53"
+Cohesion: 1.0
+Nodes (1): Documentation Icon
+
+### Community 54 - "Community 54"
+Cohesion: 1.0
+Nodes (1): GitHub Icon
+
+### Community 55 - "Community 55"
+Cohesion: 1.0
+Nodes (1): Social Icon
+
+### Community 56 - "Community 56"
+Cohesion: 1.0
+Nodes (1): X (Twitter) Icon
+
+### Community 57 - "Community 57"
 Cohesion: 1.0
 Nodes (1): React Logo
 
 ## Knowledge Gaps
-- **35 isolated node(s):** `Starbucks Green`, `Green Accent`, `Frap Floating CTA`, `Gold`, `Rewards Ceremony` (+30 more)
+- **41 isolated node(s):** `Starbucks Green`, `Green Accent`, `Frap Floating CTA`, `Gold`, `Rewards Ceremony` (+36 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `UI: Badge Component`** (6 nodes): `Badge()`, `badge.tsx`, `utils.ts`, `badge.tsx`, `utils.ts`, `cn()`
+- **Thin community `UI Badge & Utility Functions`** (6 nodes): `Badge()`, `badge.tsx`, `utils.ts`, `badge.tsx`, `utils.ts`, `cn()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `App Entry & Core`** (5 nodes): `App()`, `App.tsx`, `main.tsx`, `App.tsx`, `main.tsx`
+- **Thin community `Application Shell & Main Entry`** (5 nodes): `App()`, `App.tsx`, `main.tsx`, `App.tsx`, `main.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `UI: Card Component`** (4 nodes): `CardAction()`, `cn()`, `card.tsx`, `card.tsx`
+- **Thin community `UI Card Layouts`** (4 nodes): `CardAction()`, `cn()`, `card.tsx`, `card.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Order Management`** (3 nodes): `OrderList.tsx`, `getStatusIcon()`, `OrderList.tsx`
+- **Thin community `Admin Order Management`** (3 nodes): `OrderList.tsx`, `getStatusIcon()`, `OrderList.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `UI: Button Component`** (3 nodes): `cn()`, `button.tsx`, `button.tsx`
+- **Thin community `UI Button Components`** (3 nodes): `cn()`, `button.tsx`, `button.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `UI: Input Component`** (3 nodes): `input.tsx`, `Input()`, `input.tsx`
+- **Thin community `UI Input Components`** (3 nodes): `input.tsx`, `Input()`, `input.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `UI: Separator Component`** (3 nodes): `separator.tsx`, `cn()`, `separator.tsx`
+- **Thin community `UI Separator Components`** (3 nodes): `separator.tsx`, `cn()`, `separator.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Auth: Login View`** (3 nodes): `AdminLogin()`, `AdminLogin.tsx`, `AdminLogin.tsx`
+- **Thin community `Admin Authentication`** (3 nodes): `AdminLogin()`, `AdminLogin.tsx`, `AdminLogin.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Auth: Protected Routes`** (3 nodes): `ProtectedRoute.tsx`, `ProtectedRoute()`, `ProtectedRoute.tsx`
+- **Thin community `Customer Homepage`** (3 nodes): `HomePage.tsx`, `HomePage()`, `HomePage.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Routing: Customer`** (3 nodes): `CustomerRoutes()`, `CustomerRoutes.tsx`, `CustomerRoutes.tsx`
+- **Thin community `Routing Security & Guards`** (3 nodes): `ProtectedRoute.tsx`, `ProtectedRoute()`, `ProtectedRoute.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `UI: Hero Section`** (3 nodes): `Hero.tsx`, `Hero.tsx`, `Hero()`
+- **Thin community `Customer-Facing Routes`** (3 nodes): `CustomerRoutes()`, `CustomerRoutes.tsx`, `CustomerRoutes.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `UI: Promotional Banners`** (3 nodes): `PromotionalBanners.tsx`, `PromotionalBanners.tsx`, `PromotionalBanners()`
+- **Thin community `Hero Section Components`** (3 nodes): `Hero.tsx`, `Hero.tsx`, `Hero()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `UI: Floating Action Button`** (3 nodes): `FrapButton.tsx`, `FrapButton.tsx`, `FrapButton()`
+- **Thin community `Promotional Marketing Banners`** (3 nodes): `PromotionalBanners.tsx`, `PromotionalBanners.tsx`, `PromotionalBanners()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Marketing: About Page`** (3 nodes): `AboutPage()`, `AboutPage.tsx`, `AboutPage.tsx`
+- **Thin community `Interactive Frap UI`** (3 nodes): `FrapButton.tsx`, `FrapButton.tsx`, `FrapButton()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Design: CTA & Accents`** (2 nodes): `Frap Floating CTA`, `Green Accent`
+- **Thin community `About Us Content`** (3 nodes): `AboutPage()`, `AboutPage.tsx`, `AboutPage.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Design: Rewards`** (2 nodes): `Gold`, `Rewards Ceremony`
+- **Thin community `Storybook Component Documentation`** (3 nodes): `Button()`, `Button.tsx`, `Button.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `DOM Mounting`** (2 nodes): `main.tsx`, `root div`
+- **Thin community `Brand Green Accents`** (2 nodes): `Frap Floating CTA`, `Green Accent`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Assets: Hero Image`** (2 nodes): `hero.png`, `Stacked Platforms Visual`
+- **Thin community `Loyalty & Rewards Visuals`** (2 nodes): `Gold`, `Rewards Ceremony`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Build: Vite Tools`** (2 nodes): `Vite SVG Logo`, `Vite Framework`
+- **Thin community `React DOM Initialization`** (2 nodes): `main.tsx`, `root div`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 37`** (1 nodes): `Starbucks Green`
+- **Thin community `Visual Hero Assets`** (2 nodes): `hero.png`, `Stacked Platforms Visual`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 38`** (1 nodes): `ESLint Configuration`
+- **Thin community `Vite Framework Boilerplate`** (2 nodes): `Vite SVG Logo`, `Vite Framework`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 39`** (1 nodes): `Base64 Design System`
+- **Thin community `Order Workflow & WhatsApp Integration`** (2 nodes): `Customer Workflow & Ordering`, `WhatsApp Integration`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 40`** (1 nodes): `Wrapped Base64 Design System`
+- **Thin community `Product Data & Schema Definition`** (2 nodes): `Product Management (Admin)`, `Technical Constraints`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 41`** (1 nodes): `Favicon`
+- **Thin community `Community 41`** (1 nodes): `Starbucks Green`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 42`** (1 nodes): `Icons Spritesheet`
+- **Thin community `Community 42`** (1 nodes): `ESLint Configuration`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 43`** (1 nodes): `Hero Image`
+- **Thin community `Community 43`** (1 nodes): `Base64 Design System`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 46`** (1 nodes): `Application Favicon`
+- **Thin community `Community 44`** (1 nodes): `Wrapped Base64 Design System`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 47`** (1 nodes): `Bluesky Icon`
+- **Thin community `Community 45`** (1 nodes): `Favicon`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 48`** (1 nodes): `Discord Icon`
+- **Thin community `Community 46`** (1 nodes): `Icons Spritesheet`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 49`** (1 nodes): `Documentation Icon`
+- **Thin community `Community 47`** (1 nodes): `Hero Image`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 50`** (1 nodes): `GitHub Icon`
+- **Thin community `Community 50`** (1 nodes): `Application Favicon`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 51`** (1 nodes): `Social Icon`
+- **Thin community `Community 51`** (1 nodes): `Bluesky Icon`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 52`** (1 nodes): `X (Twitter) Icon`
+- **Thin community `Community 52`** (1 nodes): `Discord Icon`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 53`** (1 nodes): `React Logo`
+- **Thin community `Community 53`** (1 nodes): `Documentation Icon`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 54`** (1 nodes): `GitHub Icon`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 55`** (1 nodes): `Social Icon`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 56`** (1 nodes): `X (Twitter) Icon`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 57`** (1 nodes): `React Logo`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `Starbucks Green`, `Green Accent`, `Frap Floating CTA` to the rest of the system?**
-  _35 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _41 weakly-connected nodes found - possible documentation gaps or missing edges._

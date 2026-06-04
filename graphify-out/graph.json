@@ -1,14 +1,32 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {},
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "supermarket_system_definition",
+        "label": "Supermarket System Definition",
+        "nodes": [
+          "requirements_core_purpose",
+          "requirements_product_management",
+          "requirements_customer_workflow",
+          "requirements_whatsapp_integration",
+          "requirements_technical_constraints"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "REQUIREMENTS.md"
+      }
+    ]
+  },
   "nodes": [
     {
       "label": "prisma.config.ts",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-server\\prisma.config.ts",
       "source_location": "L1",
-      "community": 25,
+      "community": 30,
       "norm_label": "prisma.config.ts",
       "id": "supermarket_server_prisma_config_ts"
     },
@@ -17,7 +35,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-server\\src\\index.ts",
       "source_location": "L1",
-      "community": 26,
+      "community": 31,
       "norm_label": "index.ts",
       "id": "supermarket_server_src_index_ts"
     },
@@ -26,7 +44,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\eslint.config.js",
       "source_location": "L1",
-      "community": 27,
+      "community": 32,
       "norm_label": "eslint.config.js",
       "id": "supermarket_ui_eslint_config_js"
     },
@@ -35,7 +53,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\vite.config.ts",
       "source_location": "L1",
-      "community": 28,
+      "community": 33,
       "norm_label": "vite.config.ts",
       "id": "supermarket_ui_vite_config_ts"
     },
@@ -80,7 +98,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\admin\\inventory\\ProductTable.tsx",
       "source_location": "L1",
-      "community": 29,
+      "community": 34,
       "norm_label": "producttable.tsx",
       "id": "supermarket_ui_src_components_admin_inventory_producttable_tsx"
     },
@@ -278,7 +296,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\HomePage.tsx",
       "source_location": "L1",
-      "community": 30,
+      "community": 35,
       "norm_label": "homepage.tsx",
       "id": "supermarket_ui_src_pages_homepage_tsx"
     },
@@ -341,7 +359,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-server\\prisma.config.ts",
       "source_location": "L1",
-      "community": 31,
+      "community": 36,
       "norm_label": "prisma.config.ts",
       "id": "d_supermarket_supermarket_server_prisma_config_ts"
     },
@@ -350,7 +368,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-server\\src\\index.ts",
       "source_location": "L1",
-      "community": 32,
+      "community": 37,
       "norm_label": "index.ts",
       "id": "d_supermarket_supermarket_server_src_index_ts"
     },
@@ -359,7 +377,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\eslint.config.js",
       "source_location": "L1",
-      "community": 33,
+      "community": 38,
       "norm_label": "eslint.config.js",
       "id": "d_supermarket_supermarket_ui_eslint_config_js"
     },
@@ -368,7 +386,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\vite.config.ts",
       "source_location": "L1",
-      "community": 34,
+      "community": 39,
       "norm_label": "vite.config.ts",
       "id": "d_supermarket_supermarket_ui_vite_config_ts"
     },
@@ -404,7 +422,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\admin\\inventory\\ProductTable.tsx",
       "source_location": "L1",
-      "community": 35,
+      "community": 40,
       "norm_label": "producttable.tsx",
       "id": "d_supermarket_supermarket_ui_src_components_admin_inventory_producttable_tsx"
     },
@@ -485,7 +503,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\HomePage.tsx",
       "source_location": "L1",
-      "community": 36,
+      "community": 13,
       "norm_label": "homepage.tsx",
       "id": "d_supermarket_supermarket_ui_src_pages_homepage_tsx"
     },
@@ -519,7 +537,7 @@
       "label": "Starbucks Green",
       "file_type": "document",
       "source_file": "DESIGN.md",
-      "community": 37,
+      "community": 41,
       "norm_label": "starbucks green",
       "id": "design_starbucks_green"
     },
@@ -527,7 +545,7 @@
       "label": "Green Accent",
       "file_type": "document",
       "source_file": "DESIGN.md",
-      "community": 20,
+      "community": 23,
       "norm_label": "green accent",
       "id": "design_green_accent"
     },
@@ -535,7 +553,7 @@
       "label": "Frap Floating CTA",
       "file_type": "document",
       "source_file": "DESIGN.md",
-      "community": 20,
+      "community": 23,
       "norm_label": "frap floating cta",
       "id": "design_frap_cta"
     },
@@ -543,7 +561,7 @@
       "label": "Gold",
       "file_type": "document",
       "source_file": "DESIGN.md",
-      "community": 21,
+      "community": 24,
       "norm_label": "gold",
       "id": "design_gold"
     },
@@ -551,7 +569,7 @@
       "label": "Rewards Ceremony",
       "file_type": "document",
       "source_file": "DESIGN.md",
-      "community": 21,
+      "community": 24,
       "norm_label": "rewards ceremony",
       "id": "design_rewards_ceremony"
     },
@@ -580,7 +598,7 @@
       "label": "@vitejs/plugin-react",
       "file_type": "document",
       "source_file": "README.md",
-      "community": 13,
+      "community": 14,
       "norm_label": "@vitejs/plugin-react",
       "id": "readme_vite_react"
     },
@@ -588,7 +606,7 @@
       "label": "ESLint Configuration",
       "file_type": "document",
       "source_file": "README.md",
-      "community": 38,
+      "community": 42,
       "norm_label": "eslint configuration",
       "source_location": null,
       "source_url": null,
@@ -601,7 +619,7 @@
       "label": "main.tsx",
       "file_type": "code",
       "source_file": "index.html",
-      "community": 22,
+      "community": 25,
       "norm_label": "main.tsx",
       "id": "index_main_tsx"
     },
@@ -609,7 +627,7 @@
       "label": "root div",
       "file_type": "code",
       "source_file": "index.html",
-      "community": 22,
+      "community": 25,
       "norm_label": "root div",
       "id": "index_root_div"
     },
@@ -617,7 +635,7 @@
       "label": "Base64 Design System",
       "file_type": "document",
       "source_file": "b64.txt",
-      "community": 39,
+      "community": 43,
       "norm_label": "base64 design system",
       "id": "b64_base64_content"
     },
@@ -625,7 +643,7 @@
       "label": "Wrapped Base64 Design System",
       "file_type": "document",
       "source_file": "b64_wrapped.txt",
-      "community": 40,
+      "community": 44,
       "norm_label": "wrapped base64 design system",
       "id": "b64_wrapped_base64_content"
     },
@@ -633,7 +651,7 @@
       "label": "Favicon",
       "file_type": "image",
       "source_file": "public/favicon.svg",
-      "community": 41,
+      "community": 45,
       "norm_label": "favicon",
       "id": "favicon_svg"
     },
@@ -641,7 +659,7 @@
       "label": "Icons Spritesheet",
       "file_type": "image",
       "source_file": "public/icons.svg",
-      "community": 42,
+      "community": 46,
       "norm_label": "icons spritesheet",
       "id": "icons_svg"
     },
@@ -649,7 +667,7 @@
       "label": "Hero Image",
       "file_type": "image",
       "source_file": "src/assets/hero.png",
-      "community": 43,
+      "community": 47,
       "norm_label": "hero image",
       "id": "hero_image"
     },
@@ -657,7 +675,7 @@
       "label": "React Logo",
       "file_type": "image",
       "source_file": "src/assets/react.svg",
-      "community": 13,
+      "community": 14,
       "norm_label": "react logo",
       "id": "react_logo"
     },
@@ -665,7 +683,7 @@
       "label": "Vite Logo",
       "file_type": "image",
       "source_file": "src/assets/vite.svg",
-      "community": 13,
+      "community": 14,
       "norm_label": "vite logo",
       "id": "vite_logo"
     },
@@ -683,7 +701,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\ProtectedRoute.tsx",
       "source_location": "L1",
-      "community": 14,
+      "community": 15,
       "norm_label": "protectedroute.tsx",
       "id": "supermarket_ui_src_components_protectedroute_tsx"
     },
@@ -692,7 +710,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\ProtectedRoute.tsx",
       "source_location": "L10",
-      "community": 14,
+      "community": 15,
       "norm_label": "protectedroute()",
       "id": "protectedroute_protectedroute"
     },
@@ -701,7 +719,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\routes\\AdminRoutes.tsx",
       "source_location": "L1",
-      "community": 44,
+      "community": 48,
       "norm_label": "adminroutes.tsx",
       "id": "supermarket_ui_src_routes_adminroutes_tsx"
     },
@@ -710,7 +728,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\routes\\CustomerRoutes.tsx",
       "source_location": "L1",
-      "community": 15,
+      "community": 16,
       "norm_label": "customerroutes.tsx",
       "id": "supermarket_ui_src_routes_customerroutes_tsx"
     },
@@ -719,7 +737,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\routes\\CustomerRoutes.tsx",
       "source_location": "L4",
-      "community": 15,
+      "community": 16,
       "norm_label": "customerroutes()",
       "id": "customerroutes_customerroutes"
     },
@@ -728,7 +746,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\ProtectedRoute.tsx",
       "source_location": "L1",
-      "community": 14,
+      "community": 15,
       "norm_label": "protectedroute.tsx",
       "id": "d_supermarket_supermarket_ui_src_components_protectedroute_tsx"
     },
@@ -737,7 +755,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\routes\\AdminRoutes.tsx",
       "source_location": "L1",
-      "community": 45,
+      "community": 49,
       "norm_label": "adminroutes.tsx",
       "id": "d_supermarket_supermarket_ui_src_routes_adminroutes_tsx"
     },
@@ -746,7 +764,7 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\routes\\CustomerRoutes.tsx",
       "source_location": "L1",
-      "community": 15,
+      "community": 16,
       "norm_label": "customerroutes.tsx",
       "id": "d_supermarket_supermarket_ui_src_routes_customerroutes_tsx"
     },
@@ -876,7 +894,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 50,
       "norm_label": "application favicon",
       "id": "ui_favicon"
     },
@@ -889,7 +907,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 51,
       "norm_label": "bluesky icon",
       "id": "icons_bluesky"
     },
@@ -902,7 +920,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 48,
+      "community": 52,
       "norm_label": "discord icon",
       "id": "icons_discord"
     },
@@ -915,7 +933,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 53,
       "norm_label": "documentation icon",
       "id": "icons_documentation"
     },
@@ -928,7 +946,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 54,
       "norm_label": "github icon",
       "id": "icons_github"
     },
@@ -941,7 +959,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 55,
       "norm_label": "social icon",
       "id": "icons_social"
     },
@@ -954,7 +972,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 56,
       "norm_label": "x (twitter) icon",
       "id": "icons_x"
     },
@@ -967,7 +985,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 26,
       "norm_label": "hero.png",
       "id": "hero_png_file"
     },
@@ -980,7 +998,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 23,
+      "community": 26,
       "norm_label": "stacked platforms visual",
       "id": "hero_visual_content"
     },
@@ -993,7 +1011,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 57,
       "norm_label": "react logo",
       "id": "react_svg"
     },
@@ -1006,7 +1024,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 24,
+      "community": 27,
       "norm_label": "vite svg logo",
       "id": "vite_asset"
     },
@@ -1019,7 +1037,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 24,
+      "community": 27,
       "norm_label": "vite framework",
       "id": "vite_framework"
     },
@@ -1028,207 +1046,207 @@
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\CountdownBanner.tsx",
       "source_location": "L1",
-      "id": "components_home_countdownbanner_tsx",
-      "community": 54,
-      "norm_label": "countdownbanner.tsx"
+      "community": 58,
+      "norm_label": "countdownbanner.tsx",
+      "id": "components_home_countdownbanner_tsx"
     },
     {
       "label": "FeaturedCategories.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\FeaturedCategories.tsx",
       "source_location": "L1",
-      "id": "components_home_featuredcategories_tsx",
-      "community": 55,
-      "norm_label": "featuredcategories.tsx"
+      "community": 59,
+      "norm_label": "featuredcategories.tsx",
+      "id": "components_home_featuredcategories_tsx"
     },
     {
       "label": "FeaturedProducts.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\FeaturedProducts.tsx",
       "source_location": "L1",
-      "id": "components_home_featuredproducts_tsx",
-      "community": 56,
-      "norm_label": "featuredproducts.tsx"
+      "community": 60,
+      "norm_label": "featuredproducts.tsx",
+      "id": "components_home_featuredproducts_tsx"
     },
     {
       "label": "Hero.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\Hero.tsx",
       "source_location": "L1",
-      "id": "components_home_hero_tsx",
-      "community": 16,
-      "norm_label": "hero.tsx"
+      "community": 17,
+      "norm_label": "hero.tsx",
+      "id": "components_home_hero_tsx"
     },
     {
       "label": "Hero()",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\Hero.tsx",
       "source_location": "L4",
-      "id": "hero_hero",
-      "community": 16,
-      "norm_label": "hero()"
+      "community": 17,
+      "norm_label": "hero()",
+      "id": "hero_hero"
     },
     {
       "label": "PromotionalBanners.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\PromotionalBanners.tsx",
       "source_location": "L1",
-      "id": "components_home_promotionalbanners_tsx",
-      "community": 17,
-      "norm_label": "promotionalbanners.tsx"
+      "community": 18,
+      "norm_label": "promotionalbanners.tsx",
+      "id": "components_home_promotionalbanners_tsx"
     },
     {
       "label": "PromotionalBanners()",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\PromotionalBanners.tsx",
       "source_location": "L6",
-      "id": "promotionalbanners_promotionalbanners",
-      "community": 17,
-      "norm_label": "promotionalbanners()"
+      "community": 18,
+      "norm_label": "promotionalbanners()",
+      "id": "promotionalbanners_promotionalbanners"
     },
     {
       "label": "Header.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\layout\\Header.tsx",
       "source_location": "L1",
-      "id": "components_layout_header_tsx",
-      "community": 57,
-      "norm_label": "header.tsx"
+      "community": 61,
+      "norm_label": "header.tsx",
+      "id": "components_layout_header_tsx"
     },
     {
       "label": "ProductGrid.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\shop\\ProductGrid.tsx",
       "source_location": "L1",
-      "id": "components_shop_productgrid_tsx",
-      "community": 58,
-      "norm_label": "productgrid.tsx"
+      "community": 62,
+      "norm_label": "productgrid.tsx",
+      "id": "components_shop_productgrid_tsx"
     },
     {
       "label": "FrapButton.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\ui\\FrapButton.tsx",
       "source_location": "L1",
-      "id": "components_ui_frapbutton_tsx",
-      "community": 18,
-      "norm_label": "frapbutton.tsx"
+      "community": 19,
+      "norm_label": "frapbutton.tsx",
+      "id": "components_ui_frapbutton_tsx"
     },
     {
       "label": "FrapButton()",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\ui\\FrapButton.tsx",
       "source_location": "L4",
-      "id": "frapbutton_frapbutton",
-      "community": 18,
-      "norm_label": "frapbutton()"
+      "community": 19,
+      "norm_label": "frapbutton()",
+      "id": "frapbutton_frapbutton"
     },
     {
       "label": "AboutPage.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\AboutPage.tsx",
       "source_location": "L1",
-      "id": "pages_aboutpage_tsx",
-      "community": 19,
-      "norm_label": "aboutpage.tsx"
+      "community": 20,
+      "norm_label": "aboutpage.tsx",
+      "id": "pages_aboutpage_tsx"
     },
     {
       "label": "AboutPage()",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\AboutPage.tsx",
       "source_location": "L4",
-      "id": "aboutpage_aboutpage",
-      "community": 19,
-      "norm_label": "aboutpage()"
+      "community": 20,
+      "norm_label": "aboutpage()",
+      "id": "aboutpage_aboutpage"
     },
     {
       "label": "CategoryPage.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\CategoryPage.tsx",
       "source_location": "L1",
-      "id": "pages_categorypage_tsx",
-      "community": 59,
-      "norm_label": "categorypage.tsx"
+      "community": 63,
+      "norm_label": "categorypage.tsx",
+      "id": "pages_categorypage_tsx"
     },
     {
       "label": "ShopPage.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\ShopPage.tsx",
       "source_location": "L1",
-      "id": "pages_shoppage_tsx",
       "community": 1,
-      "norm_label": "shoppage.tsx"
+      "norm_label": "shoppage.tsx",
+      "id": "pages_shoppage_tsx"
     },
     {
       "label": "ShopPage()",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\ShopPage.tsx",
       "source_location": "L31",
-      "id": "shoppage_shoppage",
       "community": 1,
-      "norm_label": "shoppage()"
+      "norm_label": "shoppage()",
+      "id": "shoppage_shoppage"
     },
     {
       "label": "CountdownBanner.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\CountdownBanner.tsx",
       "source_location": "L1",
-      "id": "d_supermarket_supermarket_ui_src_components_home_countdownbanner_tsx",
-      "community": 60,
-      "norm_label": "countdownbanner.tsx"
+      "community": 64,
+      "norm_label": "countdownbanner.tsx",
+      "id": "d_supermarket_supermarket_ui_src_components_home_countdownbanner_tsx"
     },
     {
       "label": "FeaturedCategories.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\FeaturedCategories.tsx",
       "source_location": "L1",
-      "id": "d_supermarket_supermarket_ui_src_components_home_featuredcategories_tsx",
-      "community": 61,
-      "norm_label": "featuredcategories.tsx"
+      "community": 65,
+      "norm_label": "featuredcategories.tsx",
+      "id": "d_supermarket_supermarket_ui_src_components_home_featuredcategories_tsx"
     },
     {
       "label": "FeaturedProducts.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\FeaturedProducts.tsx",
       "source_location": "L1",
-      "id": "d_supermarket_supermarket_ui_src_components_home_featuredproducts_tsx",
-      "community": 62,
-      "norm_label": "featuredproducts.tsx"
+      "community": 66,
+      "norm_label": "featuredproducts.tsx",
+      "id": "d_supermarket_supermarket_ui_src_components_home_featuredproducts_tsx"
     },
     {
       "label": "Hero.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\Hero.tsx",
       "source_location": "L1",
-      "id": "d_supermarket_supermarket_ui_src_components_home_hero_tsx",
-      "community": 16,
-      "norm_label": "hero.tsx"
+      "community": 17,
+      "norm_label": "hero.tsx",
+      "id": "d_supermarket_supermarket_ui_src_components_home_hero_tsx"
     },
     {
       "label": "PromotionalBanners.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\home\\PromotionalBanners.tsx",
       "source_location": "L1",
-      "id": "d_supermarket_supermarket_ui_src_components_home_promotionalbanners_tsx",
-      "community": 17,
-      "norm_label": "promotionalbanners.tsx"
+      "community": 18,
+      "norm_label": "promotionalbanners.tsx",
+      "id": "d_supermarket_supermarket_ui_src_components_home_promotionalbanners_tsx"
     },
     {
       "label": "FrapButton.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\ui\\FrapButton.tsx",
       "source_location": "L1",
-      "id": "d_supermarket_supermarket_ui_src_components_ui_frapbutton_tsx",
-      "community": 18,
-      "norm_label": "frapbutton.tsx"
+      "community": 19,
+      "norm_label": "frapbutton.tsx",
+      "id": "d_supermarket_supermarket_ui_src_components_ui_frapbutton_tsx"
     },
     {
       "label": "AboutPage.tsx",
       "file_type": "code",
       "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\AboutPage.tsx",
       "source_location": "L1",
-      "id": "d_supermarket_supermarket_ui_src_pages_aboutpage_tsx",
-      "community": 19,
-      "norm_label": "aboutpage.tsx"
+      "community": 20,
+      "norm_label": "aboutpage.tsx",
+      "id": "d_supermarket_supermarket_ui_src_pages_aboutpage_tsx"
     },
     {
       "label": "Header Component",
@@ -1238,9 +1256,9 @@
         "start_line": 15,
         "end_line": 74
       },
-      "id": "header_header",
       "community": 1,
-      "norm_label": "header component"
+      "norm_label": "header component",
+      "id": "header_header"
     },
     {
       "label": "ProductGrid Component",
@@ -1250,9 +1268,9 @@
         "start_line": 20,
         "end_line": 28
       },
-      "id": "productgrid_productgrid",
       "community": 1,
-      "norm_label": "productgrid component"
+      "norm_label": "productgrid component",
+      "id": "productgrid_productgrid"
     },
     {
       "label": "ProductCard Component",
@@ -1262,9 +1280,9 @@
         "start_line": 30,
         "end_line": 68
       },
-      "id": "productgrid_productcard",
       "community": 1,
-      "norm_label": "productcard component"
+      "norm_label": "productcard component",
+      "id": "productgrid_productcard"
     },
     {
       "label": "Pagination Component",
@@ -1274,9 +1292,9 @@
         "start_line": 76,
         "end_line": 115
       },
-      "id": "productgrid_pagination",
       "community": 1,
-      "norm_label": "pagination component"
+      "norm_label": "pagination component",
+      "id": "productgrid_pagination"
     },
     {
       "label": "CategoryPage Component",
@@ -1286,9 +1304,9 @@
         "start_line": 28,
         "end_line": 105
       },
-      "id": "categorypage_categorypage",
       "community": 1,
-      "norm_label": "categorypage component"
+      "norm_label": "categorypage component",
+      "id": "categorypage_categorypage"
     },
     {
       "label": "Mock Products Data",
@@ -1298,9 +1316,9 @@
         "start_line": 7,
         "end_line": 24
       },
-      "id": "categorypage_mock_products",
       "community": 1,
-      "norm_label": "mock products data"
+      "norm_label": "mock products data",
+      "id": "categorypage_mock_products"
     },
     {
       "label": "Mock Products Data",
@@ -1310,9 +1328,289 @@
         "start_line": 7,
         "end_line": 23
       },
-      "id": "shoppage_mock_products",
       "community": 1,
-      "norm_label": "mock products data"
+      "norm_label": "mock products data",
+      "id": "shoppage_mock_products"
+    },
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\eslint.config.js",
+      "source_location": "L1",
+      "id": "eslint_config_js",
+      "community": 67,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\vite.config.ts",
+      "source_location": "L1",
+      "id": "vite_config_ts",
+      "community": 68,
+      "norm_label": "vite.config.ts"
+    },
+    {
+      "label": "vitest.shims.d.ts",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\vitest.shims.d.ts",
+      "source_location": "L1",
+      "id": "vitest_shims_d_ts",
+      "community": 69,
+      "norm_label": "vitest.shims.d.ts"
+    },
+    {
+      "label": "ProductGrid.tsx",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\shop\\ProductGrid.tsx",
+      "source_location": "L1",
+      "id": "src_components_shop_productgrid_tsx",
+      "community": 70,
+      "norm_label": "productgrid.tsx"
+    },
+    {
+      "label": "HomePage.tsx",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\HomePage.tsx",
+      "source_location": "L1",
+      "id": "src_pages_homepage_tsx",
+      "community": 13,
+      "norm_label": "homepage.tsx"
+    },
+    {
+      "label": "HomePage()",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\HomePage.tsx",
+      "source_location": "L9",
+      "id": "homepage_homepage",
+      "community": 13,
+      "norm_label": "homepage()"
+    },
+    {
+      "label": "Button.stories.ts",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Button.stories.ts",
+      "source_location": "L1",
+      "id": "src_stories_button_stories_ts",
+      "community": 71,
+      "norm_label": "button.stories.ts"
+    },
+    {
+      "label": "Button.tsx",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Button.tsx",
+      "source_location": "L1",
+      "id": "src_stories_button_tsx",
+      "community": 21,
+      "norm_label": "button.tsx"
+    },
+    {
+      "label": "Button()",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Button.tsx",
+      "source_location": "L19",
+      "id": "button_button",
+      "community": 21,
+      "norm_label": "button()"
+    },
+    {
+      "label": "Header.stories.ts",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Header.stories.ts",
+      "source_location": "L1",
+      "id": "src_stories_header_stories_ts",
+      "community": 72,
+      "norm_label": "header.stories.ts"
+    },
+    {
+      "label": "Header.tsx",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Header.tsx",
+      "source_location": "L1",
+      "id": "src_stories_header_tsx",
+      "community": 73,
+      "norm_label": "header.tsx"
+    },
+    {
+      "label": "Page.stories.ts",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Page.stories.ts",
+      "source_location": "L1",
+      "id": "src_stories_page_stories_ts",
+      "community": 74,
+      "norm_label": "page.stories.ts"
+    },
+    {
+      "label": "Page.tsx",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Page.tsx",
+      "source_location": "L1",
+      "id": "src_stories_page_tsx",
+      "community": 75,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "vitest.shims.d.ts",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\vitest.shims.d.ts",
+      "source_location": "L1",
+      "id": "d_supermarket_supermarket_ui_vitest_shims_d_ts",
+      "community": 76,
+      "norm_label": "vitest.shims.d.ts"
+    },
+    {
+      "label": "ProductGrid.tsx",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\components\\shop\\ProductGrid.tsx",
+      "source_location": "L1",
+      "id": "d_supermarket_supermarket_ui_src_components_shop_productgrid_tsx",
+      "community": 77,
+      "norm_label": "productgrid.tsx"
+    },
+    {
+      "label": "Button.stories.ts",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Button.stories.ts",
+      "source_location": "L1",
+      "id": "d_supermarket_supermarket_ui_src_stories_button_stories_ts",
+      "community": 78,
+      "norm_label": "button.stories.ts"
+    },
+    {
+      "label": "Button.tsx",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Button.tsx",
+      "source_location": "L1",
+      "id": "d_supermarket_supermarket_ui_src_stories_button_tsx",
+      "community": 21,
+      "norm_label": "button.tsx"
+    },
+    {
+      "label": "Header.stories.ts",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Header.stories.ts",
+      "source_location": "L1",
+      "id": "d_supermarket_supermarket_ui_src_stories_header_stories_ts",
+      "community": 79,
+      "norm_label": "header.stories.ts"
+    },
+    {
+      "label": "Header.tsx",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Header.tsx",
+      "source_location": "L1",
+      "id": "d_supermarket_supermarket_ui_src_stories_header_tsx",
+      "community": 80,
+      "norm_label": "header.tsx"
+    },
+    {
+      "label": "Page.stories.ts",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Page.stories.ts",
+      "source_location": "L1",
+      "id": "d_supermarket_supermarket_ui_src_stories_page_stories_ts",
+      "community": 81,
+      "norm_label": "page.stories.ts"
+    },
+    {
+      "label": "Page.tsx",
+      "file_type": "code",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Page.tsx",
+      "source_location": "L1",
+      "id": "d_supermarket_supermarket_ui_src_stories_page_tsx",
+      "community": 82,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "Core Purpose",
+      "file_type": "document",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_core_purpose",
+      "community": 22,
+      "norm_label": "core purpose"
+    },
+    {
+      "label": "Product Management (Admin)",
+      "file_type": "document",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_product_management",
+      "community": 29,
+      "norm_label": "product management (admin)"
+    },
+    {
+      "label": "Customer Workflow & Ordering",
+      "file_type": "document",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_customer_workflow",
+      "community": 28,
+      "norm_label": "customer workflow & ordering"
+    },
+    {
+      "label": "WhatsApp Integration",
+      "file_type": "document",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_whatsapp_integration",
+      "community": 28,
+      "norm_label": "whatsapp integration"
+    },
+    {
+      "label": "Technical Constraints",
+      "file_type": "document",
+      "source_file": "REQUIREMENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_technical_constraints",
+      "community": 29,
+      "norm_label": "technical constraints"
+    },
+    {
+      "label": "React Root",
+      "file_type": "code",
+      "source_file": "supermarket-ui/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "index_html_root",
+      "community": 22,
+      "norm_label": "react root"
+    },
+    {
+      "label": "Storybook Configuration",
+      "file_type": "document",
+      "source_file": "supermarket-ui/src/stories/Configure.mdx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "configure_mdx_storybook",
+      "community": 22,
+      "norm_label": "storybook configuration"
     }
   ],
   "links": [
@@ -1833,6 +2131,18 @@
       "target": "app_app"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\HomePage.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "d_supermarket_supermarket_ui_src_pages_homepage_tsx",
+      "_tgt": "homepage_homepage",
+      "source": "d_supermarket_supermarket_ui_src_pages_homepage_tsx",
+      "target": "homepage_homepage",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -2078,9 +2388,9 @@
       "weight": 1.0,
       "_src": "components_home_hero_tsx",
       "_tgt": "hero_hero",
+      "confidence_score": 1.0,
       "source": "components_home_hero_tsx",
-      "target": "hero_hero",
-      "confidence_score": 1.0
+      "target": "hero_hero"
     },
     {
       "relation": "contains",
@@ -2090,9 +2400,9 @@
       "weight": 1.0,
       "_src": "hero_hero",
       "_tgt": "d_supermarket_supermarket_ui_src_components_home_hero_tsx",
+      "confidence_score": 1.0,
       "source": "hero_hero",
-      "target": "d_supermarket_supermarket_ui_src_components_home_hero_tsx",
-      "confidence_score": 1.0
+      "target": "d_supermarket_supermarket_ui_src_components_home_hero_tsx"
     },
     {
       "relation": "contains",
@@ -2102,9 +2412,9 @@
       "weight": 1.0,
       "_src": "components_home_promotionalbanners_tsx",
       "_tgt": "promotionalbanners_promotionalbanners",
+      "confidence_score": 1.0,
       "source": "components_home_promotionalbanners_tsx",
-      "target": "promotionalbanners_promotionalbanners",
-      "confidence_score": 1.0
+      "target": "promotionalbanners_promotionalbanners"
     },
     {
       "relation": "contains",
@@ -2114,9 +2424,9 @@
       "weight": 1.0,
       "_src": "promotionalbanners_promotionalbanners",
       "_tgt": "d_supermarket_supermarket_ui_src_components_home_promotionalbanners_tsx",
+      "confidence_score": 1.0,
       "source": "promotionalbanners_promotionalbanners",
-      "target": "d_supermarket_supermarket_ui_src_components_home_promotionalbanners_tsx",
-      "confidence_score": 1.0
+      "target": "d_supermarket_supermarket_ui_src_components_home_promotionalbanners_tsx"
     },
     {
       "relation": "contains",
@@ -2126,9 +2436,9 @@
       "weight": 1.0,
       "_src": "components_ui_frapbutton_tsx",
       "_tgt": "frapbutton_frapbutton",
+      "confidence_score": 1.0,
       "source": "components_ui_frapbutton_tsx",
-      "target": "frapbutton_frapbutton",
-      "confidence_score": 1.0
+      "target": "frapbutton_frapbutton"
     },
     {
       "relation": "contains",
@@ -2138,9 +2448,9 @@
       "weight": 1.0,
       "_src": "frapbutton_frapbutton",
       "_tgt": "d_supermarket_supermarket_ui_src_components_ui_frapbutton_tsx",
+      "confidence_score": 1.0,
       "source": "frapbutton_frapbutton",
-      "target": "d_supermarket_supermarket_ui_src_components_ui_frapbutton_tsx",
-      "confidence_score": 1.0
+      "target": "d_supermarket_supermarket_ui_src_components_ui_frapbutton_tsx"
     },
     {
       "relation": "contains",
@@ -2150,9 +2460,9 @@
       "weight": 1.0,
       "_src": "pages_aboutpage_tsx",
       "_tgt": "aboutpage_aboutpage",
+      "confidence_score": 1.0,
       "source": "pages_aboutpage_tsx",
-      "target": "aboutpage_aboutpage",
-      "confidence_score": 1.0
+      "target": "aboutpage_aboutpage"
     },
     {
       "relation": "contains",
@@ -2162,9 +2472,9 @@
       "weight": 1.0,
       "_src": "aboutpage_aboutpage",
       "_tgt": "d_supermarket_supermarket_ui_src_pages_aboutpage_tsx",
+      "confidence_score": 1.0,
       "source": "aboutpage_aboutpage",
-      "target": "d_supermarket_supermarket_ui_src_pages_aboutpage_tsx",
-      "confidence_score": 1.0
+      "target": "d_supermarket_supermarket_ui_src_pages_aboutpage_tsx"
     },
     {
       "relation": "contains",
@@ -2174,9 +2484,9 @@
       "weight": 1.0,
       "_src": "pages_shoppage_tsx",
       "_tgt": "shoppage_shoppage",
+      "confidence_score": 1.0,
       "source": "pages_shoppage_tsx",
-      "target": "shoppage_shoppage",
-      "confidence_score": 1.0
+      "target": "shoppage_shoppage"
     },
     {
       "relation": "calls",
@@ -2267,7 +2577,107 @@
       "_tgt": "categorypage_mock_products",
       "source": "categorypage_categorypage",
       "target": "categorypage_mock_products"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\pages\\HomePage.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "src_pages_homepage_tsx",
+      "_tgt": "homepage_homepage",
+      "source": "src_pages_homepage_tsx",
+      "target": "homepage_homepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Button.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_src": "src_stories_button_tsx",
+      "_tgt": "button_button",
+      "source": "src_stories_button_tsx",
+      "target": "button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "D:\\supermarket\\supermarket-ui\\src\\stories\\Button.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_src": "button_button",
+      "_tgt": "d_supermarket_supermarket_ui_src_stories_button_tsx",
+      "source": "button_button",
+      "target": "d_supermarket_supermarket_ui_src_stories_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "supermarket-ui/index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "requirements_core_purpose",
+      "_tgt": "index_html_root",
+      "source": "requirements_core_purpose",
+      "target": "index_html_root"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "REQUIREMENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "requirements_product_management",
+      "_tgt": "requirements_technical_constraints",
+      "source": "requirements_product_management",
+      "target": "requirements_technical_constraints"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REQUIREMENTS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "requirements_customer_workflow",
+      "_tgt": "requirements_whatsapp_integration",
+      "source": "requirements_customer_workflow",
+      "target": "requirements_whatsapp_integration"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "supermarket-ui/src/stories/Configure.mdx",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "index_html_root",
+      "_tgt": "configure_mdx_storybook",
+      "source": "index_html_root",
+      "target": "configure_mdx_storybook"
     }
   ],
-  "hyperedges": []
+  "hyperedges": [
+    {
+      "id": "supermarket_system_definition",
+      "label": "Supermarket System Definition",
+      "nodes": [
+        "requirements_core_purpose",
+        "requirements_product_management",
+        "requirements_customer_workflow",
+        "requirements_whatsapp_integration",
+        "requirements_technical_constraints"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REQUIREMENTS.md"
+    }
+  ]
 }
