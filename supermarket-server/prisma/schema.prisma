@@ -61,3 +61,59 @@ model products {
   @@index([category_id], map: "idx_products_category")
   @@index([metadata], map: "idx_products_metadata", type: Gin)
 }
+
+model users {
+  id             String     @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name           String     @db.VarChar(255)
+  email          String     @unique @db.VarChar(255)
+  email_verified Boolean
+  image          String?
+  created_at     DateTime   @default(now()) @db.Timestamptz(6)
+  updated_at     DateTime   @updatedAt @db.Timestamptz(6)
+  role           String?    @db.VarChar(50)
+  banned         Boolean?   @default(false)
+  ban_reason     String?
+  ban_expires    DateTime?  @db.Timestamptz(6)
+  sessions       sessions[]
+  accounts       accounts[]
+}
+
+model sessions {
+  id              String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  expires_at      DateTime @db.Timestamptz(6)
+  token           String   @unique
+  created_at      DateTime @default(now()) @db.Timestamptz(6)
+  updated_at      DateTime @updatedAt @db.Timestamptz(6)
+  ip_address      String?  @db.VarChar(50)
+  user_agent      String?
+  user_id         String   @db.Uuid
+  user            users    @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  impersonated_by String?  @db.Uuid
+}
+
+model accounts {
+  id                        String    @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  account_id                String    @db.VarChar(255)
+  provider_id               String    @db.VarChar(255)
+  user_id                   String    @db.Uuid
+  user                      users     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  access_token              String?
+  refresh_token             String?
+  id_token                  String?
+  access_token_expires_at   DateTime? @db.Timestamptz(6)
+  refresh_token_expires_at  DateTime? @db.Timestamptz(6)
+  scope                     String?
+  password                  String?
+  created_at                DateTime  @default(now()) @db.Timestamptz(6)
+  updated_at                DateTime  @updatedAt @db.Timestamptz(6)
+}
+
+model verifications {
+  id         String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  identifier String   @db.VarChar(255)
+  value      String   @db.VarChar(255)
+  expires_at DateTime @db.Timestamptz(6)
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  updated_at DateTime @updatedAt @db.Timestamptz(6)
+}
+

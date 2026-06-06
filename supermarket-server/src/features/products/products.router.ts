@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import prisma from '../../prisma';
+import { adminOnly } from '../auth/auth.router';
 
 const router = Router();
 
@@ -16,7 +17,7 @@ router.get('/', async (req: Request, res: Response) => {
 });
 
 // POST /api/admin/products
-router.post('/', async (req: Request, res: Response) => {
+router.post('/', adminOnly, async (req: Request, res: Response) => {
   const { name, description, price, discount, imageUrl, categoryId, metadata } = req.body;
   try {
     const product = await prisma.products.create({
@@ -38,7 +39,7 @@ router.post('/', async (req: Request, res: Response) => {
 });
 
 // PUT /api/admin/products/:id
-router.put('/:id', async (req: Request, res: Response) => {
+router.put('/:id', adminOnly, async (req: Request, res: Response) => {
   const { id } = req.params;
   const { name, description, price, discount, imageUrl, categoryId, metadata, isAvailable } = req.body;
   try {
@@ -62,7 +63,7 @@ router.put('/:id', async (req: Request, res: Response) => {
 });
 
 // DELETE /api/admin/products/:id
-router.delete('/:id', async (req: Request, res: Response) => {
+router.delete('/:id', adminOnly, async (req: Request, res: Response) => {
   const { id } = req.params;
   try {
     await prisma.products.delete({ where: { id: id as string } });

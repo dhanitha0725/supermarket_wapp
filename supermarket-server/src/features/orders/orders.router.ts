@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import prisma from '../../prisma';
+import { adminOnly } from '../auth/auth.router';
 
 const router = Router();
 
@@ -31,7 +32,7 @@ router.post('/', async (req: Request, res: Response) => {
 });
 
 // GET /api/admin/orders
-router.get('/', async (req: Request, res: Response) => {
+router.get('/', adminOnly, async (req: Request, res: Response) => {
   try {
     const orders = await prisma.orders.findMany({
       orderBy: { created_at: 'desc' },

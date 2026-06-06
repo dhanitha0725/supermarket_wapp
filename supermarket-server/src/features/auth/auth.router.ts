@@ -1,16 +1,42 @@
-import { Router, Request, Response } from 'express';
+import { Router, Request, Response, NextFunction } from 'express';
+import { fromNodeHeaders } from "better-auth/node";
+import { auth } from "../../lib/auth";
 
 const router = Router();
 
-// POST /api/admin/login OR /api/auth/login
-router.post('/login', (req: Request, res: Response) => {
-  const { username, password } = req.body;
-  // Simple check for demonstration
-  if (username === 'admin' && password === 'admin123') {
-    res.json({ token: 'simple-temp-token-123' });
-  } else {
-    res.status(401).json({ error: 'Invalid credentials' });
+/**
+ * Admin check middleware
+ */
+export const adminOnly = async (req: Request, res: Response, next: NextFunction) => {
+    const session = await auth.api.getSession({
+        headers: fromNodeHeaders(req.headers),
+    });
+
+    if (!session || session.user.role !== 'admin') {
+        res.status(403).json({ error: 'Forbidden: Admin access required' });
+        return;
+    }
+
+    // Attach session to request for downstream usage
+    (req as any).session = session;
+    next();
+};
+
+/**
+ * GET /api/auth/me
+ * Returns current session info
+ */
+router.get('/me', async (req: Request, res: Response) => {
+  const session = await auth.api.getSession({
+    headers: fromNodeHeaders(req.headers),
+  });
+  
+  if (!session) {
+    res.status(401).json({ error: 'Unauthorized' });
+    return;
   }
+
+  res.json(session);
 });
 
 export default router;

@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import prisma from '../../prisma';
+import { adminOnly } from '../auth/auth.router';
 
 const router = Router();
 
@@ -13,8 +14,8 @@ router.get('/', async (req: Request, res: Response) => {
   }
 });
 
-// POST /api/admin/categories OR /api/categories (admin)
-router.post('/', async (req: Request, res: Response) => {
+// POST /api/admin/categories OR /api/categories (admin only)
+router.post('/', adminOnly, async (req: Request, res: Response) => {
   const { name, description } = req.body;
   try {
     const category = await prisma.categories.create({
