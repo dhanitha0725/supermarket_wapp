@@ -1,0 +1,99 @@
+[
+  {
+    "id": "layer:backend-features",
+    "name": "Backend Feature Slices",
+    "description": "Vertical slices containing all logic for specific business features (Products, Orders, Auth).",
+    "nodeIds": [
+      "file:supermarket-server/src/features/auth/auth.router.ts",
+      "file:supermarket-server/src/features/categories/categories.router.ts",
+      "file:supermarket-server/src/features/orders/orders.router.ts",
+      "file:supermarket-server/src/features/products/get-products.ts",
+      "file:supermarket-server/src/features/products/products.router.ts",
+      "endpoint:supermarket-server/src/features/products/products.router.ts:GET /",
+      "endpoint:supermarket-server/src/features/products/products.router.ts:POST /",
+      "endpoint:supermarket-server/src/features/products/products.router.ts:PUT /:id",
+      "endpoint:supermarket-server/src/features/products/products.router.ts:DELETE /:id",
+      "file:supermarket-server/src/features/products/update-product.ts"
+    ]
+  },
+  {
+    "id": "layer:backend-core",
+    "name": "Backend Core & Infrastructure",
+    "description": "Core server configuration, database schema, and shared libraries.",
+    "nodeIds": [
+      "file:supermarket-server/src/app.ts",
+      "file:supermarket-server/src/lib/auth.ts",
+      "file:supermarket-server/src/prisma.ts",
+      "file:supermarket-server/src/server.ts",
+      "schema:supermarket-server/prisma/init-schema.sql",
+      "schema:supermarket-server/prisma/schema.prisma"
+    ]
+  },
+  {
+    "id": "layer:frontend-pages",
+    "name": "Frontend Pages",
+    "description": "Top-level page components and view logic.",
+    "nodeIds": [
+      "file:supermarket-ui/src/pages/AboutPage.tsx",
+      "file:supermarket-ui/src/pages/admin/AdminDashboard.tsx",
+      "file:supermarket-ui/src/pages/admin/AdminLogin.tsx",
+      "file:supermarket-ui/src/pages/CategoryPage.tsx",
+      "file:supermarket-ui/src/pages/HomePage.tsx",
+      "file:supermarket-ui/src/pages/ShopPage.tsx"
+    ]
+  },
+  {
+    "id": "layer:frontend-components",
+    "name": "Frontend UI Components",
+    "description": "Reusable UI components, layout elements, and feature-specific components.",
+    "nodeIds": [
+      "file:supermarket-ui/src/components/admin/inventory/ProductForm.tsx",
+      "file:supermarket-ui/src/components/admin/inventory/ProductTable.tsx",
+      "file:supermarket-ui/src/components/admin/orders/OrderList.tsx",
+      "file:supermarket-ui/src/components/home/CountdownBanner.tsx",
+      "file:supermarket-ui/src/components/home/FeaturedCategories.tsx",
+      "file:supermarket-ui/src/components/home/FeaturedProducts.tsx",
+      "file:supermarket-ui/src/components/home/Hero.tsx",
+      "file:supermarket-ui/src/components/home/PromotionalBanners.tsx",
+      "file:supermarket-ui/src/components/layout/Header.tsx",
+      "file:supermarket-ui/src/components/ProtectedRoute.tsx",
+      "file:supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "file:supermarket-ui/src/components/ui/badge.tsx",
+      "file:supermarket-ui/src/components/ui/button.tsx",
+      "file:supermarket-ui/src/components/ui/card.tsx",
+      "file:supermarket-ui/src/components/ui/dropdown-menu.tsx",
+      "file:supermarket-ui/src/components/ui/FrapButton.tsx",
+      "file:supermarket-ui/src/components/ui/input.tsx",
+      "file:supermarket-ui/src/components/ui/separator.tsx"
+    ]
+  },
+  {
+    "id": "layer:frontend-core",
+    "name": "Frontend Core & Configuration",
+    "description": "App entry point, routing, utility functions, and build configuration.",
+    "nodeIds": [
+      "document:supermarket-ui/src/graphify-out/GRAPH_REPORT.md",
+      "document:supermarket-ui/src/graphify-out/graph.html",
+      "config:supermarket-ui/src/graphify-out/graph.json",
+      "document:supermarket-ui/src/stories/Configure.mdx",
+      "file:supermarket-ui/src/stories/button.css",
+      "file:supermarket-ui/src/stories/header.css",
+      "file:supermarket-ui/src/stories/page.css",
+      "file:supermarket-ui/src/App.css",
+      "file:supermarket-ui/src/App.tsx",
+      "file:supermarket-ui/src/index.css",
+      "file:supermarket-ui/src/lib/utils.ts",
+      "file:supermarket-ui/src/main.tsx",
+      "file:supermarket-ui/src/routes/AdminRoutes.tsx",
+      "file:supermarket-ui/src/routes/CustomerRoutes.tsx",
+      "file:supermarket-ui/src/stories/assets/avif-test-image.avif",
+      "file:supermarket-ui/src/stories/Button.stories.ts",
+      "file:supermarket-ui/src/stories/Button.tsx",
+      "file:supermarket-ui/src/stories/Header.stories.ts",
+      "file:supermarket-ui/src/stories/Header.tsx",
+      "file:supermarket-ui/src/stories/Page.stories.ts",
+      "file:supermarket-ui/src/stories/Page.tsx",
+      "config:supermarket-ui/vite.config.ts"
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "nodes": [
+    {
+      "id": "document:supermarket-ui/src/graphify-out/GRAPH_REPORT.md",
+      "type": "document",
+      "name": "GRAPH_REPORT.md",
+      "filePath": "supermarket-ui/src/graphify-out/GRAPH_REPORT.md",
+      "summary": "Analysis report for the supermarket-ui source code graph, detailing extraction stats, communities, and key abstractions like Badge and cn.",
+      "tags": [
+        "docs",
+        "report",
+        "graphify",
+        "analysis"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:supermarket-ui/src/graphify-out/graph.html",
+      "type": "document",
+      "name": "graph.html",
+      "filePath": "supermarket-ui/src/graphify-out/graph.html",
+      "summary": "Interactive web visualization of the supermarket-ui knowledge graph.",
+      "tags": [
+        "markup",
+        "visualization",
+        "graphify",
+        "html"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:supermarket-ui/src/graphify-out/graph.json",
+      "type": "config",
+      "name": "graph.json",
+      "filePath": "supermarket-ui/src/graphify-out/graph.json",
+      "summary": "Machine-readable knowledge graph data containing nodes and links extracted from the supermarket-ui source code.",
+      "tags": [
+        "config",
+        "data",
+        "json",
+        "graphify"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:supermarket-ui/src/graphify-out/GRAPH_REPORT.md",
+      "target": "config:supermarket-ui/src/graphify-out/graph.json",
+      "type": "documents",
+      "weight": 0.5,
+      "summary": "Reports on the data contained in graph.json"
+    },
+    {
+      "source": "document:supermarket-ui/src/graphify-out/graph.html",
+      "target": "config:supermarket-ui/src/graphify-out/graph.json",
+      "type": "serves",
+      "weight": 0.5,
+      "summary": "Visualizes the data from graph.json"
+    }
+  ]
+}

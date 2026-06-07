@@ -1,0 +1,1224 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 133,
+  "totalBatches": 11,
+  "exportsByPath": {
+    ".graphifyignore": [],
+    ".understand-anything/.understandignore": [],
+    "graphify-out/.graphify_python": [],
+    "supermarket-server/prisma.config.ts": [],
+    "supermarket-server/src/app.ts": [],
+    "supermarket-server/src/features/auth/auth.router.ts": [
+      "adminOnly"
+    ],
+    "supermarket-server/src/features/auth/get-me.ts": [
+      "getMe"
+    ],
+    "supermarket-server/src/features/categories/categories.router.ts": [],
+    "supermarket-server/src/features/categories/create-category.ts": [
+      "createCategory"
+    ],
+    "supermarket-server/src/features/categories/get-categories.ts": [
+      "getCategories"
+    ],
+    "supermarket-server/src/features/orders/create-order.ts": [
+      "createOrder"
+    ],
+    "supermarket-server/src/features/orders/get-orders.ts": [
+      "getOrders"
+    ],
+    "supermarket-server/src/features/orders/orders.router.ts": [],
+    "supermarket-server/src/features/products/create-product.ts": [
+      "createProduct"
+    ],
+    "supermarket-server/src/features/products/delete-product.ts": [
+      "deleteProduct"
+    ],
+    "supermarket-server/src/features/products/get-products.ts": [
+      "getProducts"
+    ],
+    "supermarket-server/src/features/products/products.router.ts": [],
+    "supermarket-server/src/features/products/update-product.ts": [
+      "updateProduct"
+    ],
+    "supermarket-server/src/lib/auth.ts": [
+      "auth"
+    ],
+    "supermarket-server/src/prisma.ts": [],
+    "supermarket-server/src/server.ts": [],
+    "supermarket-ui/.agent/skills/ui-ux-pro-max/scripts/core.py": [
+      "BM25",
+      "_load_csv",
+      "_search_csv",
+      "detect_domain",
+      "search",
+      "search_stack"
+    ],
+    "supermarket-ui/.agent/skills/ui-ux-pro-max/scripts/design_system.py": [
+      "DesignSystemGenerator",
+      "format_ascii_box",
+      "format_markdown",
+      "generate_design_system",
+      "persist_design_system",
+      "format_master_md",
+      "format_page_override_md",
+      "_generate_intelligent_overrides",
+      "_detect_page_type"
+    ],
+    "supermarket-ui/.agent/skills/ui-ux-pro-max/scripts/search.py": [
+      "format_output"
+    ],
+    "supermarket-ui/.storybook/main.ts": [],
+    "supermarket-ui/.storybook/preview.tsx": [],
+    "supermarket-ui/eslint.config.js": [],
+    "supermarket-ui/src/App.tsx": [
+      "App"
+    ],
+    "supermarket-ui/src/components/admin/inventory/ProductForm.tsx": [
+      "ProductForm"
+    ],
+    "supermarket-ui/src/components/admin/inventory/ProductTable.tsx": [
+      "ProductTable"
+    ],
+    "supermarket-ui/src/components/admin/orders/OrderList.tsx": [
+      "OrderList"
+    ],
+    "supermarket-ui/src/components/home/CountdownBanner.tsx": [
+      "CountdownBanner"
+    ],
+    "supermarket-ui/src/components/home/FeaturedCategories.tsx": [
+      "FeaturedCategories"
+    ],
+    "supermarket-ui/src/components/home/FeaturedProducts.tsx": [
+      "FeaturedProducts"
+    ],
+    "supermarket-ui/src/components/home/Hero.tsx": [],
+    "supermarket-ui/src/components/home/PromotionalBanners.tsx": [
+      "PromotionalBanners"
+    ],
+    "supermarket-ui/src/components/layout/Header.tsx": [
+      "Header"
+    ],
+    "supermarket-ui/src/components/ProtectedRoute.tsx": [],
+    "supermarket-ui/src/components/shop/ProductGrid.tsx": [
+      "ProductGrid",
+      "Pagination"
+    ],
+    "supermarket-ui/src/components/ui/badge.tsx": [
+      "Badge",
+      "badgeVariants"
+    ],
+    "supermarket-ui/src/components/ui/button.tsx": [
+      "Button",
+      "buttonVariants"
+    ],
+    "supermarket-ui/src/components/ui/card.tsx": [
+      "Card",
+      "CardHeader",
+      "CardFooter",
+      "CardTitle",
+      "CardAction",
+      "CardDescription",
+      "CardContent"
+    ],
+    "supermarket-ui/src/components/ui/dropdown-menu.tsx": [
+      "DropdownMenu",
+      "DropdownMenuPortal",
+      "DropdownMenuTrigger",
+      "DropdownMenuContent",
+      "DropdownMenuGroup",
+      "DropdownMenuLabel",
+      "DropdownMenuItem",
+      "DropdownMenuCheckboxItem",
+      "DropdownMenuRadioGroup",
+      "DropdownMenuRadioItem",
+      "DropdownMenuSeparator",
+      "DropdownMenuShortcut",
+      "DropdownMenuSub",
+      "DropdownMenuSubTrigger",
+      "DropdownMenuSubContent"
+    ],
+    "supermarket-ui/src/components/ui/FrapButton.tsx": [
+      "FrapButton"
+    ],
+    "supermarket-ui/src/components/ui/input.tsx": [
+      "Input"
+    ],
+    "supermarket-ui/src/components/ui/separator.tsx": [
+      "Separator"
+    ],
+    "supermarket-ui/src/lib/utils.ts": [
+      "cn"
+    ],
+    "supermarket-ui/src/main.tsx": [],
+    "supermarket-ui/src/pages/AboutPage.tsx": [
+      "AboutPage"
+    ],
+    "supermarket-ui/src/pages/admin/AdminDashboard.tsx": [
+      "AdminDashboard"
+    ],
+    "supermarket-ui/src/pages/admin/AdminLogin.tsx": [
+      "AdminLogin"
+    ],
+    "supermarket-ui/src/pages/CategoryPage.tsx": [
+      "CategoryPage"
+    ],
+    "supermarket-ui/src/pages/HomePage.tsx": [
+      "HomePage"
+    ],
+    "supermarket-ui/src/pages/ShopPage.tsx": [
+      "ShopPage"
+    ],
+    "supermarket-ui/src/routes/AdminRoutes.tsx": [],
+    "supermarket-ui/src/routes/CustomerRoutes.tsx": [],
+    "supermarket-ui/src/stories/assets/avif-test-image.avif": [],
+    "supermarket-ui/src/stories/Button.stories.ts": [
+      "Primary",
+      "Secondary",
+      "Large",
+      "Small"
+    ],
+    "supermarket-ui/src/stories/Button.tsx": [
+      "Button"
+    ],
+    "supermarket-ui/src/stories/Header.stories.ts": [
+      "LoggedIn",
+      "LoggedOut"
+    ],
+    "supermarket-ui/src/stories/Header.tsx": [
+      "Header"
+    ],
+    "supermarket-ui/src/stories/Page.stories.ts": [
+      "LoggedOut",
+      "LoggedIn"
+    ],
+    "supermarket-ui/src/stories/Page.tsx": [
+      "Page"
+    ],
+    "supermarket-ui/vite.config.ts": [],
+    "supermarket-ui/vitest.shims.d.ts": [],
+    "Untitled.canvas": []
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "GEMINI.md",
+          "language": "markdown",
+          "sizeLines": 39,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "REQUIREMENTS.md",
+          "language": "markdown",
+          "sizeLines": 30,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "_COMMUNITY_Community 62.md",
+          "language": "markdown",
+          "sizeLines": 0,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "mcp.json",
+          "language": "json",
+          "sizeLines": 4,
+          "fileCategory": "config"
+        },
+        {
+          "path": "package.json",
+          "language": "json",
+          "sizeLines": 7,
+          "fileCategory": "config"
+        },
+        {
+          "path": "skills-lock.json",
+          "language": "json",
+          "sizeLines": 41,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "GEMINI.md": [],
+        "REQUIREMENTS.md": [],
+        "_COMMUNITY_Community 62.md": [],
+        "mcp.json": [],
+        "package.json": [],
+        "skills-lock.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "graphify-out/GRAPH_REPORT.md",
+          "language": "markdown",
+          "sizeLines": 233,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "graphify-out/cost.json",
+          "language": "json",
+          "sizeLines": 23,
+          "fileCategory": "config"
+        },
+        {
+          "path": "graphify-out/graph.html",
+          "language": "html",
+          "sizeLines": 256,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "graphify-out/graph.json",
+          "language": "json",
+          "sizeLines": 2682,
+          "fileCategory": "config"
+        },
+        {
+          "path": "graphify-out/manifest.json",
+          "language": "json",
+          "sizeLines": 69,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "graphify-out/GRAPH_REPORT.md": [],
+        "graphify-out/cost.json": [],
+        "graphify-out/graph.html": [],
+        "graphify-out/graph.json": [],
+        "graphify-out/manifest.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/charts.csv",
+          "language": "csv",
+          "sizeLines": 26,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/colors.csv",
+          "language": "csv",
+          "sizeLines": 97,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/icons.csv",
+          "language": "csv",
+          "sizeLines": 101,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/landing.csv",
+          "language": "csv",
+          "sizeLines": 31,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/products.csv",
+          "language": "csv",
+          "sizeLines": 96,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/react-performance.csv",
+          "language": "csv",
+          "sizeLines": 45,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/styles.csv",
+          "language": "csv",
+          "sizeLines": 68,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/typography.csv",
+          "language": "csv",
+          "sizeLines": 57,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/ui-reasoning.csv",
+          "language": "csv",
+          "sizeLines": 101,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/ux-guidelines.csv",
+          "language": "csv",
+          "sizeLines": 99,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/web-interface.csv",
+          "language": "csv",
+          "sizeLines": 31,
+          "fileCategory": "data"
+        }
+      ],
+      "batchImportData": {
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/charts.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/colors.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/icons.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/landing.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/products.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/react-performance.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/styles.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/typography.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/ui-reasoning.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/ux-guidelines.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/web-interface.csv": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/astro.csv",
+          "language": "csv",
+          "sizeLines": 54,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/flutter.csv",
+          "language": "csv",
+          "sizeLines": 53,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv",
+          "language": "csv",
+          "sizeLines": 56,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv",
+          "language": "csv",
+          "sizeLines": 53,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/nextjs.csv",
+          "language": "csv",
+          "sizeLines": 53,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv",
+          "language": "csv",
+          "sizeLines": 51,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv",
+          "language": "csv",
+          "sizeLines": 59,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/react-native.csv",
+          "language": "csv",
+          "sizeLines": 52,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/react.csv",
+          "language": "csv",
+          "sizeLines": 54,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/shadcn.csv",
+          "language": "csv",
+          "sizeLines": 61,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/svelte.csv",
+          "language": "csv",
+          "sizeLines": 54,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/swiftui.csv",
+          "language": "csv",
+          "sizeLines": 51,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/vue.csv",
+          "language": "csv",
+          "sizeLines": 50,
+          "fileCategory": "data"
+        }
+      ],
+      "batchImportData": {
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/astro.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/flutter.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/nextjs.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/react-native.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/react.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/shadcn.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/svelte.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/swiftui.csv": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/data/stacks/vue.csv": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 5,
+      "files": [
+        {
+          "path": "supermarket-ui/DESIGN.md",
+          "language": "markdown",
+          "sizeLines": 578,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "supermarket-ui/README.md",
+          "language": "markdown",
+          "sizeLines": 73,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "supermarket-ui/b64.txt",
+          "language": "txt",
+          "sizeLines": 1,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "supermarket-ui/b64_wrapped.txt",
+          "language": "txt",
+          "sizeLines": 653,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "supermarket-ui/components.json",
+          "language": "json",
+          "sizeLines": 25,
+          "fileCategory": "config"
+        },
+        {
+          "path": "supermarket-ui/index.html",
+          "language": "html",
+          "sizeLines": 13,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "supermarket-ui/package.json",
+          "language": "json",
+          "sizeLines": 56,
+          "fileCategory": "config"
+        },
+        {
+          "path": "supermarket-ui/tsconfig.app.json",
+          "language": "json",
+          "sizeLines": 29,
+          "fileCategory": "config"
+        },
+        {
+          "path": "supermarket-ui/tsconfig.json",
+          "language": "json",
+          "sizeLines": 15,
+          "fileCategory": "config"
+        },
+        {
+          "path": "supermarket-ui/tsconfig.node.json",
+          "language": "json",
+          "sizeLines": 24,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "supermarket-ui/DESIGN.md": [],
+        "supermarket-ui/README.md": [],
+        "supermarket-ui/b64.txt": [],
+        "supermarket-ui/b64_wrapped.txt": [],
+        "supermarket-ui/components.json": [],
+        "supermarket-ui/index.html": [],
+        "supermarket-ui/package.json": [],
+        "supermarket-ui/tsconfig.app.json": [],
+        "supermarket-ui/tsconfig.json": [],
+        "supermarket-ui/tsconfig.node.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 6,
+      "files": [
+        {
+          "path": "supermarket-ui/src/graphify-out/GRAPH_REPORT.md",
+          "language": "markdown",
+          "sizeLines": 33,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "supermarket-ui/src/graphify-out/graph.html",
+          "language": "html",
+          "sizeLines": 256,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "supermarket-ui/src/graphify-out/graph.json",
+          "language": "json",
+          "sizeLines": 636,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "supermarket-ui/src/graphify-out/GRAPH_REPORT.md": [],
+        "supermarket-ui/src/graphify-out/graph.html": [],
+        "supermarket-ui/src/graphify-out/graph.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 7,
+      "files": [
+        {
+          "path": "supermarket-ui/src/stories/Configure.mdx",
+          "language": "markdown",
+          "sizeLines": 388,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "supermarket-ui/src/stories/button.css",
+          "language": "css",
+          "sizeLines": 30,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "supermarket-ui/src/stories/header.css",
+          "language": "css",
+          "sizeLines": 32,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "supermarket-ui/src/stories/page.css",
+          "language": "css",
+          "sizeLines": 68,
+          "fileCategory": "markup"
+        }
+      ],
+      "batchImportData": {
+        "supermarket-ui/src/stories/Configure.mdx": [],
+        "supermarket-ui/src/stories/button.css": [],
+        "supermarket-ui/src/stories/header.css": [],
+        "supermarket-ui/src/stories/page.css": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 8,
+      "files": [
+        {
+          "path": ".agents/skills/better-auth-best-practices/SKILL.md",
+          "language": "markdown",
+          "sizeLines": 174,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".agents/skills/better-auth-security-best-practices/SKILL.MD",
+          "language": "markdown",
+          "sizeLines": 432,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".agents/skills/create-auth-skill/SKILL.md",
+          "language": "markdown",
+          "sizeLines": 321,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".agents/skills/email-and-password-best-practices/SKILL.md",
+          "language": "markdown",
+          "sizeLines": 212,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".agents/skills/organization-best-practices/SKILL.md",
+          "language": "markdown",
+          "sizeLines": 479,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".agents/skills/two-factor-authentication-best-practices/SKILL.md",
+          "language": "markdown",
+          "sizeLines": 331,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".gemini/settings.json",
+          "language": "json",
+          "sizeLines": 7,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".graphifyignore",
+          "language": "unknown",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": ".understand-anything/.understandignore",
+          "language": "unknown",
+          "sizeLines": 53,
+          "fileCategory": "code"
+        },
+        {
+          "path": "graphify-out/.graphify_python",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/package.json",
+          "language": "json",
+          "sizeLines": 31,
+          "fileCategory": "config"
+        },
+        {
+          "path": "supermarket-server/prisma.config.ts",
+          "language": "typescript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/prisma/init-schema.sql",
+          "language": "sql",
+          "sizeLines": 56,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-server/prisma/schema.prisma",
+          "language": "prisma",
+          "sizeLines": 119,
+          "fileCategory": "data"
+        },
+        {
+          "path": "supermarket-server/src/app.ts",
+          "language": "typescript",
+          "sizeLines": 31,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/auth/auth.router.ts",
+          "language": "typescript",
+          "sizeLines": 32,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/auth/get-me.ts",
+          "language": "typescript",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/categories/categories.router.ts",
+          "language": "typescript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/categories/create-category.ts",
+          "language": "typescript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/categories/get-categories.ts",
+          "language": "typescript",
+          "sizeLines": 11,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/orders/create-order.ts",
+          "language": "typescript",
+          "sizeLines": 28,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/orders/get-orders.ts",
+          "language": "typescript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/orders/orders.router.ts",
+          "language": "typescript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/products/create-product.ts",
+          "language": "typescript",
+          "sizeLines": 23,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/products/delete-product.ts",
+          "language": "typescript",
+          "sizeLines": 12,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        ".agents/skills/better-auth-best-practices/SKILL.md": [],
+        ".agents/skills/better-auth-security-best-practices/SKILL.MD": [],
+        ".agents/skills/create-auth-skill/SKILL.md": [],
+        ".agents/skills/email-and-password-best-practices/SKILL.md": [],
+        ".agents/skills/organization-best-practices/SKILL.md": [],
+        ".agents/skills/two-factor-authentication-best-practices/SKILL.md": [],
+        ".gemini/settings.json": [],
+        ".graphifyignore": [],
+        ".understand-anything/.understandignore": [],
+        "graphify-out/.graphify_python": [],
+        "supermarket-server/package.json": [],
+        "supermarket-server/prisma.config.ts": [],
+        "supermarket-server/prisma/init-schema.sql": [],
+        "supermarket-server/prisma/schema.prisma": [],
+        "supermarket-server/src/app.ts": [],
+        "supermarket-server/src/features/auth/auth.router.ts": [],
+        "supermarket-server/src/features/auth/get-me.ts": [],
+        "supermarket-server/src/features/categories/categories.router.ts": [],
+        "supermarket-server/src/features/categories/create-category.ts": [],
+        "supermarket-server/src/features/categories/get-categories.ts": [],
+        "supermarket-server/src/features/orders/create-order.ts": [],
+        "supermarket-server/src/features/orders/get-orders.ts": [],
+        "supermarket-server/src/features/orders/orders.router.ts": [],
+        "supermarket-server/src/features/products/create-product.ts": [],
+        "supermarket-server/src/features/products/delete-product.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 9,
+      "files": [
+        {
+          "path": "supermarket-server/src/features/products/get-products.ts",
+          "language": "typescript",
+          "sizeLines": 13,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/products/products.router.ts",
+          "language": "typescript",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/features/products/update-product.ts",
+          "language": "typescript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/lib/auth.ts",
+          "language": "typescript",
+          "sizeLines": 65,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/prisma.ts",
+          "language": "typescript",
+          "sizeLines": 5,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/src/server.ts",
+          "language": "typescript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-server/tsconfig.json",
+          "language": "json",
+          "sizeLines": 13,
+          "fileCategory": "config"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/scripts/core.py",
+          "language": "python",
+          "sizeLines": 253,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/scripts/design_system.py",
+          "language": "python",
+          "sizeLines": 1067,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/scripts/search.py",
+          "language": "python",
+          "sizeLines": 114,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/.agent/skills/ui-ux-pro-max/SKILL.md",
+          "language": "markdown",
+          "sizeLines": 292,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "supermarket-ui/.storybook/main.ts",
+          "language": "typescript",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/.storybook/preview.tsx",
+          "language": "typescript",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/design-system/MASTER.md",
+          "language": "markdown",
+          "sizeLines": 578,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "supermarket-ui/eslint.config.js",
+          "language": "javascript",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/App.css",
+          "language": "css",
+          "sizeLines": 184,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "supermarket-ui/src/App.tsx",
+          "language": "typescript",
+          "sizeLines": 15,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/admin/inventory/ProductForm.tsx",
+          "language": "typescript",
+          "sizeLines": 74,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/admin/inventory/ProductTable.tsx",
+          "language": "typescript",
+          "sizeLines": 61,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/admin/orders/OrderList.tsx",
+          "language": "typescript",
+          "sizeLines": 98,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/home/CountdownBanner.tsx",
+          "language": "typescript",
+          "sizeLines": 49,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/home/FeaturedCategories.tsx",
+          "language": "typescript",
+          "sizeLines": 32,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/home/FeaturedProducts.tsx",
+          "language": "typescript",
+          "sizeLines": 66,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/home/Hero.tsx",
+          "language": "typescript",
+          "sizeLines": 54,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/home/PromotionalBanners.tsx",
+          "language": "typescript",
+          "sizeLines": 36,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "supermarket-server/src/features/products/get-products.ts": [],
+        "supermarket-server/src/features/products/products.router.ts": [],
+        "supermarket-server/src/features/products/update-product.ts": [],
+        "supermarket-server/src/lib/auth.ts": [],
+        "supermarket-server/src/prisma.ts": [],
+        "supermarket-server/src/server.ts": [],
+        "supermarket-server/tsconfig.json": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/scripts/core.py": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/scripts/design_system.py": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/scripts/search.py": [],
+        "supermarket-ui/.agent/skills/ui-ux-pro-max/SKILL.md": [],
+        "supermarket-ui/.storybook/main.ts": [],
+        "supermarket-ui/.storybook/preview.tsx": [],
+        "supermarket-ui/design-system/MASTER.md": [],
+        "supermarket-ui/eslint.config.js": [],
+        "supermarket-ui/src/App.css": [],
+        "supermarket-ui/src/App.tsx": [],
+        "supermarket-ui/src/components/admin/inventory/ProductForm.tsx": [],
+        "supermarket-ui/src/components/admin/inventory/ProductTable.tsx": [],
+        "supermarket-ui/src/components/admin/orders/OrderList.tsx": [],
+        "supermarket-ui/src/components/home/CountdownBanner.tsx": [],
+        "supermarket-ui/src/components/home/FeaturedCategories.tsx": [],
+        "supermarket-ui/src/components/home/FeaturedProducts.tsx": [],
+        "supermarket-ui/src/components/home/Hero.tsx": [],
+        "supermarket-ui/src/components/home/PromotionalBanners.tsx": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 10,
+      "files": [
+        {
+          "path": "supermarket-ui/src/components/layout/Header.tsx",
+          "language": "typescript",
+          "sizeLines": 72,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/ProtectedRoute.tsx",
+          "language": "typescript",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/shop/ProductGrid.tsx",
+          "language": "typescript",
+          "sizeLines": 116,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/ui/badge.tsx",
+          "language": "typescript",
+          "sizeLines": 52,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/ui/button.tsx",
+          "language": "typescript",
+          "sizeLines": 58,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/ui/card.tsx",
+          "language": "typescript",
+          "sizeLines": 103,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/ui/dropdown-menu.tsx",
+          "language": "typescript",
+          "sizeLines": 266,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/ui/FrapButton.tsx",
+          "language": "typescript",
+          "sizeLines": 13,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/ui/input.tsx",
+          "language": "typescript",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/components/ui/separator.tsx",
+          "language": "typescript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/index.css",
+          "language": "css",
+          "sizeLines": 129,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "supermarket-ui/src/lib/utils.ts",
+          "language": "typescript",
+          "sizeLines": 6,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/main.tsx",
+          "language": "typescript",
+          "sizeLines": 13,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/pages/AboutPage.tsx",
+          "language": "typescript",
+          "sizeLines": 19,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/pages/admin/AdminDashboard.tsx",
+          "language": "typescript",
+          "sizeLines": 162,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/pages/admin/AdminLogin.tsx",
+          "language": "typescript",
+          "sizeLines": 80,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/pages/CategoryPage.tsx",
+          "language": "typescript",
+          "sizeLines": 107,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/pages/HomePage.tsx",
+          "language": "typescript",
+          "sizeLines": 23,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/pages/ShopPage.tsx",
+          "language": "typescript",
+          "sizeLines": 81,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/routes/AdminRoutes.tsx",
+          "language": "typescript",
+          "sizeLines": 19,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/routes/CustomerRoutes.tsx",
+          "language": "typescript",
+          "sizeLines": 18,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/stories/assets/avif-test-image.avif",
+          "language": "avif",
+          "sizeLines": 5,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/stories/Button.stories.ts",
+          "language": "typescript",
+          "sizeLines": 54,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/stories/Button.tsx",
+          "language": "typescript",
+          "sizeLines": 37,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/stories/Header.stories.ts",
+          "language": "typescript",
+          "sizeLines": 34,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "supermarket-ui/src/components/layout/Header.tsx": [],
+        "supermarket-ui/src/components/ProtectedRoute.tsx": [],
+        "supermarket-ui/src/components/shop/ProductGrid.tsx": [],
+        "supermarket-ui/src/components/ui/badge.tsx": [],
+        "supermarket-ui/src/components/ui/button.tsx": [],
+        "supermarket-ui/src/components/ui/card.tsx": [],
+        "supermarket-ui/src/components/ui/dropdown-menu.tsx": [],
+        "supermarket-ui/src/components/ui/FrapButton.tsx": [],
+        "supermarket-ui/src/components/ui/input.tsx": [],
+        "supermarket-ui/src/components/ui/separator.tsx": [],
+        "supermarket-ui/src/index.css": [],
+        "supermarket-ui/src/lib/utils.ts": [],
+        "supermarket-ui/src/main.tsx": [],
+        "supermarket-ui/src/pages/AboutPage.tsx": [],
+        "supermarket-ui/src/pages/admin/AdminDashboard.tsx": [],
+        "supermarket-ui/src/pages/admin/AdminLogin.tsx": [],
+        "supermarket-ui/src/pages/CategoryPage.tsx": [],
+        "supermarket-ui/src/pages/HomePage.tsx": [],
+        "supermarket-ui/src/pages/ShopPage.tsx": [],
+        "supermarket-ui/src/routes/AdminRoutes.tsx": [],
+        "supermarket-ui/src/routes/CustomerRoutes.tsx": [],
+        "supermarket-ui/src/stories/assets/avif-test-image.avif": [],
+        "supermarket-ui/src/stories/Button.stories.ts": [],
+        "supermarket-ui/src/stories/Button.tsx": [],
+        "supermarket-ui/src/stories/Header.stories.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 11,
+      "files": [
+        {
+          "path": "supermarket-ui/src/stories/Header.tsx",
+          "language": "typescript",
+          "sizeLines": 56,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/stories/Page.stories.ts",
+          "language": "typescript",
+          "sizeLines": 33,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/src/stories/Page.tsx",
+          "language": "typescript",
+          "sizeLines": 73,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/vite.config.ts",
+          "language": "typescript",
+          "sizeLines": 42,
+          "fileCategory": "code"
+        },
+        {
+          "path": "supermarket-ui/vitest.shims.d.ts",
+          "language": "typescript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "Untitled.canvas",
+          "language": "canvas",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "supermarket-ui/src/stories/Header.tsx": [],
+        "supermarket-ui/src/stories/Page.stories.ts": [],
+        "supermarket-ui/src/stories/Page.tsx": [],
+        "supermarket-ui/vite.config.ts": [],
+        "supermarket-ui/vitest.shims.d.ts": [],
+        "Untitled.canvas": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

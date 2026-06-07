@@ -1,0 +1,672 @@
+{
+  "batchIndex": 10,
+  "batchFiles": [
+    {
+      "path": "supermarket-ui/src/components/layout/Header.tsx",
+      "language": "typescript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/components/ProtectedRoute.tsx",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/components/ui/badge.tsx",
+      "language": "typescript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/components/ui/button.tsx",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/components/ui/card.tsx",
+      "language": "typescript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/components/ui/dropdown-menu.tsx",
+      "language": "typescript",
+      "sizeLines": 266,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/components/ui/FrapButton.tsx",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/components/ui/input.tsx",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/components/ui/separator.tsx",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/index.css",
+      "language": "css",
+      "sizeLines": 129,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/lib/utils.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/main.tsx",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/pages/AboutPage.tsx",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/pages/admin/AdminDashboard.tsx",
+      "language": "typescript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/pages/admin/AdminLogin.tsx",
+      "language": "typescript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/pages/CategoryPage.tsx",
+      "language": "typescript",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/pages/HomePage.tsx",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/pages/ShopPage.tsx",
+      "language": "typescript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/routes/AdminRoutes.tsx",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/routes/CustomerRoutes.tsx",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/stories/assets/avif-test-image.avif",
+      "language": "binary",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/stories/Button.stories.ts",
+      "language": "typescript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/stories/Button.tsx",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supermarket-ui/src/stories/Header.stories.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "file:supermarket-ui/src/components/layout/Header.tsx",
+      "type": "file",
+      "name": "Header.tsx",
+      "filePath": "supermarket-ui/src/components/layout/Header.tsx",
+      "summary": "Main application header with navigation, search, and user profile links.",
+      "tags": ["component", "layout", "ui"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:supermarket-ui/src/components/layout/Header.tsx:Header",
+      "type": "function",
+      "name": "Header",
+      "summary": "The main header component rendering navigation and search bar.",
+      "tags": ["component", "react"]
+    },
+    {
+      "id": "file:supermarket-ui/src/components/ProtectedRoute.tsx",
+      "type": "file",
+      "name": "ProtectedRoute.tsx",
+      "filePath": "supermarket-ui/src/components/ProtectedRoute.tsx",
+      "summary": "A wrapper component to handle route protection based on authorization status.",
+      "tags": ["component", "auth", "routing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:supermarket-ui/src/components/ProtectedRoute.tsx:default",
+      "type": "function",
+      "name": "ProtectedRoute",
+      "summary": "Component that redirects to login if user is not allowed, or renders children/Outlet.",
+      "tags": ["component", "auth"]
+    },
+    {
+      "id": "file:supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "type": "file",
+      "name": "ProductGrid.tsx",
+      "filePath": "supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "summary": "Components for displaying a grid of products and handling pagination.",
+      "tags": ["component", "shop", "ui"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:supermarket-ui/src/components/shop/ProductGrid.tsx:ProductGrid",
+      "type": "function",
+      "name": "ProductGrid",
+      "summary": "Renders a responsive grid of ProductCard components.",
+      "tags": ["component"]
+    },
+    {
+      "id": "function:supermarket-ui/src/components/shop/ProductGrid.tsx:ProductCard",
+      "type": "function",
+      "name": "ProductCard",
+      "summary": "Individual product display card with 'Add to Cart' functionality.",
+      "tags": ["component"]
+    },
+    {
+      "id": "function:supermarket-ui/src/components/shop/ProductGrid.tsx:Pagination",
+      "type": "function",
+      "name": "Pagination",
+      "summary": "Pagination control for navigating through product pages.",
+      "tags": ["component"]
+    },
+    {
+      "id": "file:supermarket-ui/src/components/ui/badge.tsx",
+      "type": "file",
+      "name": "badge.tsx",
+      "filePath": "supermarket-ui/src/components/ui/badge.tsx",
+      "summary": "Reusable Badge UI component built with base-ui and tailwind-variants.",
+      "tags": ["component", "ui", "shared"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:supermarket-ui/src/components/ui/badge.tsx:Badge",
+      "type": "function",
+      "name": "Badge",
+      "summary": "A small label or badge component.",
+      "tags": ["component"]
+    },
+    {
+      "id": "file:supermarket-ui/src/components/ui/button.tsx",
+      "type": "file",
+      "name": "button.tsx",
+      "filePath": "supermarket-ui/src/components/ui/button.tsx",
+      "summary": "Core Button UI component with multiple variants and sizes.",
+      "tags": ["component", "ui", "shared"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:supermarket-ui/src/components/ui/button.tsx:Button",
+      "type": "function",
+      "name": "Button",
+      "summary": "Reusable button component.",
+      "tags": ["component"]
+    },
+    {
+      "id": "file:supermarket-ui/src/components/ui/card.tsx",
+      "type": "file",
+      "name": "card.tsx",
+      "filePath": "supermarket-ui/src/components/ui/card.tsx",
+      "summary": "Set of components for building Card UI structures.",
+      "tags": ["component", "ui", "shared"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:supermarket-ui/src/components/ui/card.tsx:Card",
+      "type": "function",
+      "name": "Card",
+      "summary": "Container component for card structures.",
+      "tags": ["component"]
+    },
+    {
+      "id": "file:supermarket-ui/src/components/ui/dropdown-menu.tsx",
+      "type": "file",
+      "name": "dropdown-menu.tsx",
+      "filePath": "supermarket-ui/src/components/ui/dropdown-menu.tsx",
+      "summary": "Robust Dropdown Menu components wrapping base-ui primitives.",
+      "tags": ["component", "ui", "shared"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:supermarket-ui/src/components/ui/FrapButton.tsx",
+      "type": "file",
+      "name": "FrapButton.tsx",
+      "filePath": "supermarket-ui/src/components/ui/FrapButton.tsx",
+      "summary": "A floating action button (FAB) for quick access to the shopping bag.",
+      "tags": ["component", "ui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-ui/src/components/ui/input.tsx",
+      "type": "file",
+      "name": "input.tsx",
+      "filePath": "supermarket-ui/src/components/ui/input.tsx",
+      "summary": "Reusable Input UI component.",
+      "tags": ["component", "ui", "shared"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-ui/src/components/ui/separator.tsx",
+      "type": "file",
+      "name": "separator.tsx",
+      "filePath": "supermarket-ui/src/components/ui/separator.tsx",
+      "summary": "A simple separator component for UI layout.",
+      "tags": ["component", "ui", "shared"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-ui/src/index.css",
+      "type": "file",
+      "name": "index.css",
+      "filePath": "supermarket-ui/src/index.css",
+      "summary": "Global CSS styles, Tailwind configuration, and theme variable definitions.",
+      "tags": ["style", "css", "theme"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:supermarket-ui/src/lib/utils.ts",
+      "type": "file",
+      "name": "utils.ts",
+      "filePath": "supermarket-ui/src/lib/utils.ts",
+      "summary": "Utility functions for the frontend, including Tailwind class merging.",
+      "tags": ["utility", "shared"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:supermarket-ui/src/lib/utils.ts:cn",
+      "type": "function",
+      "name": "cn",
+      "summary": "Helper to merge tailwind classes using clsx and twMerge.",
+      "tags": ["utility"]
+    },
+    {
+      "id": "file:supermarket-ui/src/main.tsx",
+      "type": "file",
+      "name": "main.tsx",
+      "filePath": "supermarket-ui/src/main.tsx",
+      "summary": "Entry point for the React application.",
+      "tags": ["entrypoint", "react"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-ui/src/pages/AboutPage.tsx",
+      "type": "file",
+      "name": "AboutPage.tsx",
+      "filePath": "supermarket-ui/src/pages/AboutPage.tsx",
+      "summary": "Public about page detailing SuperMart's mission.",
+      "tags": ["page", "ui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-ui/src/pages/admin/AdminDashboard.tsx",
+      "type": "file",
+      "name": "AdminDashboard.tsx",
+      "filePath": "supermarket-ui/src/pages/admin/AdminDashboard.tsx",
+      "summary": "Admin control panel for managing inventory and orders.",
+      "tags": ["page", "admin", "dashboard"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:supermarket-ui/src/pages/admin/AdminLogin.tsx",
+      "type": "file",
+      "name": "AdminLogin.tsx",
+      "filePath": "supermarket-ui/src/pages/admin/AdminLogin.tsx",
+      "summary": "Login page for the admin portal.",
+      "tags": ["page", "admin", "auth"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:supermarket-ui/src/pages/CategoryPage.tsx",
+      "type": "file",
+      "name": "CategoryPage.tsx",
+      "filePath": "supermarket-ui/src/pages/CategoryPage.tsx",
+      "summary": "Dynamic page displaying products filtered by category.",
+      "tags": ["page", "shop"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:supermarket-ui/src/pages/HomePage.tsx",
+      "type": "file",
+      "name": "HomePage.tsx",
+      "filePath": "supermarket-ui/src/pages/HomePage.tsx",
+      "summary": "Main landing page of the application.",
+      "tags": ["page", "home"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-ui/src/pages/ShopPage.tsx",
+      "type": "file",
+      "name": "ShopPage.tsx",
+      "filePath": "supermarket-ui/src/pages/ShopPage.tsx",
+      "summary": "Browse-all-products page with pagination.",
+      "tags": ["page", "shop"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:supermarket-ui/src/routes/AdminRoutes.tsx",
+      "type": "file",
+      "name": "AdminRoutes.tsx",
+      "filePath": "supermarket-ui/src/routes/AdminRoutes.tsx",
+      "summary": "Route definitions for admin-facing pages.",
+      "tags": ["routing", "admin"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-ui/src/routes/CustomerRoutes.tsx",
+      "type": "file",
+      "name": "CustomerRoutes.tsx",
+      "filePath": "supermarket-ui/src/routes/CustomerRoutes.tsx",
+      "summary": "Route definitions for customer-facing pages.",
+      "tags": ["routing", "customer"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-ui/src/stories/assets/avif-test-image.avif",
+      "type": "file",
+      "name": "avif-test-image.avif",
+      "filePath": "supermarket-ui/src/stories/assets/avif-test-image.avif",
+      "summary": "Binary asset for testing AVIF image support in Storybook.",
+      "tags": ["asset", "testing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-ui/src/stories/Button.stories.ts",
+      "type": "file",
+      "name": "Button.stories.ts",
+      "filePath": "supermarket-ui/src/stories/Button.stories.ts",
+      "summary": "Storybook documentation and test cases for the Button component.",
+      "tags": ["storybook", "test", "docs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-ui/src/stories/Button.tsx",
+      "type": "file",
+      "name": "Button.tsx",
+      "filePath": "supermarket-ui/src/stories/Button.tsx",
+      "summary": "Legacy or alternative Button component used for Storybook examples.",
+      "tags": ["component", "storybook"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-ui/src/stories/Header.stories.ts",
+      "type": "file",
+      "name": "Header.stories.ts",
+      "filePath": "supermarket-ui/src/stories/Header.stories.ts",
+      "summary": "Storybook documentation for the Header component.",
+      "tags": ["storybook", "test", "docs"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:supermarket-ui/src/components/layout/Header.tsx",
+      "target": "file:supermarket-ui/src/components/ui/button.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/layout/Header.tsx",
+      "target": "file:supermarket-ui/src/components/ui/input.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/layout/Header.tsx",
+      "target": "function:supermarket-ui/src/components/layout/Header.tsx:Header",
+      "type": "contains"
+    },
+    {
+      "source": "function:supermarket-ui/src/components/layout/Header.tsx:Header",
+      "target": "function:supermarket-ui/src/components/ui/button.tsx:Button",
+      "type": "calls"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/ProtectedRoute.tsx",
+      "target": "function:supermarket-ui/src/components/ProtectedRoute.tsx:default",
+      "type": "contains"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "target": "file:supermarket-ui/src/components/ui/button.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "target": "file:supermarket-ui/src/components/ui/card.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "target": "file:supermarket-ui/src/components/ui/badge.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "target": "function:supermarket-ui/src/components/shop/ProductGrid.tsx:ProductGrid",
+      "type": "contains"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "target": "function:supermarket-ui/src/components/shop/ProductGrid.tsx:ProductCard",
+      "type": "contains"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "target": "function:supermarket-ui/src/components/shop/ProductGrid.tsx:Pagination",
+      "type": "contains"
+    },
+    {
+      "source": "function:supermarket-ui/src/components/shop/ProductGrid.tsx:ProductGrid",
+      "target": "function:supermarket-ui/src/components/shop/ProductGrid.tsx:ProductCard",
+      "type": "calls"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/ui/badge.tsx",
+      "target": "file:supermarket-ui/src/lib/utils.ts",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/ui/button.tsx",
+      "target": "file:supermarket-ui/src/lib/utils.ts",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/ui/card.tsx",
+      "target": "file:supermarket-ui/src/lib/utils.ts",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/ui/dropdown-menu.tsx",
+      "target": "file:supermarket-ui/src/lib/utils.ts",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/ui/FrapButton.tsx",
+      "target": "file:supermarket-ui/src/components/ui/button.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/ui/input.tsx",
+      "target": "file:supermarket-ui/src/lib/utils.ts",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/components/ui/separator.tsx",
+      "target": "file:supermarket-ui/src/lib/utils.ts",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/lib/utils.ts",
+      "target": "function:supermarket-ui/src/lib/utils.ts:cn",
+      "type": "contains"
+    },
+    {
+      "source": "file:supermarket-ui/src/main.tsx",
+      "target": "file:supermarket-ui/src/index.css",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/main.tsx",
+      "target": "file:supermarket-ui/src/App.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/AboutPage.tsx",
+      "target": "file:supermarket-ui/src/components/layout/Header.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/AboutPage.tsx",
+      "target": "file:supermarket-ui/src/components/ui/FrapButton.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/admin/AdminDashboard.tsx",
+      "target": "file:supermarket-ui/src/components/ui/button.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/admin/AdminLogin.tsx",
+      "target": "file:supermarket-ui/src/components/ui/button.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/admin/AdminLogin.tsx",
+      "target": "file:supermarket-ui/src/components/ui/input.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/admin/AdminLogin.tsx",
+      "target": "file:supermarket-ui/src/components/ui/card.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/CategoryPage.tsx",
+      "target": "file:supermarket-ui/src/components/layout/Header.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/CategoryPage.tsx",
+      "target": "file:supermarket-ui/src/components/ui/FrapButton.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/CategoryPage.tsx",
+      "target": "file:supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/HomePage.tsx",
+      "target": "file:supermarket-ui/src/components/layout/Header.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/HomePage.tsx",
+      "target": "file:supermarket-ui/src/components/ui/FrapButton.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/ShopPage.tsx",
+      "target": "file:supermarket-ui/src/components/layout/Header.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/ShopPage.tsx",
+      "target": "file:supermarket-ui/src/components/ui/FrapButton.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/pages/ShopPage.tsx",
+      "target": "file:supermarket-ui/src/components/shop/ProductGrid.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/routes/AdminRoutes.tsx",
+      "target": "file:supermarket-ui/src/pages/admin/AdminDashboard.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/routes/AdminRoutes.tsx",
+      "target": "file:supermarket-ui/src/pages/admin/AdminLogin.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/routes/AdminRoutes.tsx",
+      "target": "file:supermarket-ui/src/components/ProtectedRoute.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/routes/CustomerRoutes.tsx",
+      "target": "file:supermarket-ui/src/pages/HomePage.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/routes/CustomerRoutes.tsx",
+      "target": "file:supermarket-ui/src/pages/ShopPage.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/routes/CustomerRoutes.tsx",
+      "target": "file:supermarket-ui/src/pages/CategoryPage.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/routes/CustomerRoutes.tsx",
+      "target": "file:supermarket-ui/src/pages/AboutPage.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/stories/Button.stories.ts",
+      "target": "file:supermarket-ui/src/stories/Button.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "file:supermarket-ui/src/stories/Header.stories.ts",
+      "target": "file:supermarket-ui/src/stories/Header.tsx",
+      "type": "imports"
+    }
+  ]
+}

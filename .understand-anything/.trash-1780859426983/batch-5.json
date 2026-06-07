@@ -1,0 +1,142 @@
+{
+  "nodes": [
+    {
+      "id": "document:supermarket-ui/DESIGN.md",
+      "type": "document",
+      "name": "Design System Specification",
+      "filePath": "supermarket-ui/DESIGN.md",
+      "summary": "Comprehensive design system specification inspired by Starbucks, detailing visual themes, color palettes, typography, component stylings, and layout principles.",
+      "tags": [
+        "design-system",
+        "ui",
+        "ux",
+        "specification"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:supermarket-ui/README.md",
+      "type": "document",
+      "name": "Frontend README",
+      "filePath": "supermarket-ui/README.md",
+      "summary": "Project overview and setup guide for the React + TypeScript + Vite frontend application.",
+      "tags": [
+        "documentation",
+        "setup",
+        "vite",
+        "react"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:supermarket-ui/package.json",
+      "type": "config",
+      "name": "Frontend Package Manifest",
+      "filePath": "supermarket-ui/package.json",
+      "summary": "Defines project dependencies, scripts, and metadata for the React frontend, including Storybook, Shadcn/UI, and Vitest configurations.",
+      "tags": [
+        "npm",
+        "dependencies",
+        "scripts",
+        "manifest"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:supermarket-ui/components.json",
+      "type": "config",
+      "name": "Shadcn UI Configuration",
+      "filePath": "supermarket-ui/components.json",
+      "summary": "Configuration for Shadcn UI component library, specifying aliases, styles, and tailwind settings.",
+      "tags": [
+        "shadcn",
+        "ui",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:supermarket-ui/tsconfig.json",
+      "type": "config",
+      "name": "TypeScript Root Configuration",
+      "filePath": "supermarket-ui/tsconfig.json",
+      "summary": "Root TypeScript configuration that references app and node-specific tsconfigs and defines path aliases.",
+      "tags": [
+        "typescript",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:supermarket-ui/tsconfig.app.json",
+      "type": "config",
+      "name": "TypeScript App Configuration",
+      "filePath": "supermarket-ui/tsconfig.app.json",
+      "summary": "TypeScript configuration for the frontend application source code.",
+      "tags": [
+        "typescript",
+        "configuration",
+        "frontend"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:supermarket-ui/tsconfig.node.json",
+      "type": "config",
+      "name": "TypeScript Node Configuration",
+      "filePath": "supermarket-ui/tsconfig.node.json",
+      "summary": "TypeScript configuration for environment-specific node tools (e.g., Vite config).",
+      "tags": [
+        "typescript",
+        "configuration",
+        "node"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "markup:supermarket-ui/index.html",
+      "type": "markup",
+      "name": "Application Entry HTML",
+      "filePath": "supermarket-ui/index.html",
+      "summary": "The main HTML entry point for the Vite-powered React application.",
+      "tags": [
+        "html",
+        "entry-point",
+        "markup"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:supermarket-ui/package.json",
+      "target": "config:supermarket-ui/components.json",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "config:supermarket-ui/tsconfig.json",
+      "target": "config:supermarket-ui/tsconfig.app.json",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "config:supermarket-ui/tsconfig.json",
+      "target": "config:supermarket-ui/tsconfig.node.json",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "document:supermarket-ui/DESIGN.md",
+      "target": "document:supermarket-ui/README.md",
+      "type": "related",
+      "weight": 0.5
+    },
+    {
+      "source": "markup:supermarket-ui/index.html",
+      "target": "file:supermarket-ui/src/main.tsx",
+      "type": "imports",
+      "weight": 0.7
+    }
+  ]
+}

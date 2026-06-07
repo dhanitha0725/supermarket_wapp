@@ -1,0 +1,333 @@
+{
+  "nodes": [
+    {
+      "id": "document:.agents/skills/better-auth-best-practices/SKILL.md",
+      "type": "document",
+      "name": "Better Auth Best Practices",
+      "filePath": ".agents/skills/better-auth-best-practices/SKILL.md",
+      "summary": "Comprehensive guide for integrating Better Auth, covering setup, database adapters, session management, and security patterns.",
+      "tags": ["auth", "better-auth", "best-practices", "documentation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/better-auth-security-best-practices/SKILL.MD",
+      "type": "document",
+      "name": "Better Auth Security Guide",
+      "filePath": ".agents/skills/better-auth-security-best-practices/SKILL.MD",
+      "summary": "Security-focused documentation for Better Auth, detailing secret management, rate limiting, and CSRF protection.",
+      "tags": ["security", "auth", "better-auth", "documentation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/create-auth-skill/SKILL.md",
+      "type": "document",
+      "name": "Create Auth Skill Guide",
+      "filePath": ".agents/skills/create-auth-skill/SKILL.md",
+      "summary": "Workflow guide for scaffolding and implementing authentication in TS/JS applications using Better Auth.",
+      "tags": ["auth", "workflow", "better-auth", "documentation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/email-and-password-best-practices/SKILL.md",
+      "type": "document",
+      "name": "Email & Password Auth Guide",
+      "filePath": ".agents/skills/email-and-password-best-practices/SKILL.md",
+      "summary": "Implementation guide for email/password authentication, including verification and reset flows.",
+      "tags": ["auth", "email", "password", "better-auth", "documentation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/organization-best-practices/SKILL.md",
+      "type": "document",
+      "name": "Better Auth Organization Guide",
+      "filePath": ".agents/skills/organization-best-practices/SKILL.md",
+      "summary": "Guide for multi-tenant organization management, member roles, and access control using Better Auth plugins.",
+      "tags": ["auth", "organizations", "rbac", "better-auth", "documentation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.agents/skills/two-factor-authentication-best-practices/SKILL.md",
+      "type": "document",
+      "name": "Better Auth 2FA Guide",
+      "filePath": ".agents/skills/two-factor-authentication-best-practices/SKILL.md",
+      "summary": "Detailed instructions for implementing multi-factor authentication (TOTP, OTP) with Better Auth.",
+      "tags": ["auth", "2fa", "mfa", "better-auth", "documentation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.gemini/settings.json",
+      "type": "config",
+      "name": "Gemini Settings",
+      "filePath": ".gemini/settings.json",
+      "summary": "Configuration for the Better Auth MCP server integration.",
+      "tags": ["config", "mcp", "better-auth"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.graphifyignore",
+      "type": "config",
+      "name": "Graphify Ignore",
+      "filePath": ".graphifyignore",
+      "summary": "Ignore patterns for graph generation, preserving key documentation and design files.",
+      "tags": ["config", "graphify", "ignore"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.understand-anything/.understandignore",
+      "type": "config",
+      "name": "Understand Ignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": "Ignore patterns for the 'understand' analysis tool, excluding standard environment and build files.",
+      "tags": ["config", "understand", "ignore"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/.graphify_python",
+      "type": "file",
+      "name": "Graphify Python Path",
+      "filePath": "graphify-out/.graphify_python",
+      "summary": "Internal reference file for the Python environment used by graphify.",
+      "tags": ["file", "python", "internal"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:supermarket-server/package.json",
+      "type": "config",
+      "name": "Server Package Manifest",
+      "filePath": "supermarket-server/package.json",
+      "summary": "Server configuration defining dependencies (Better Auth, Express, Prisma) and scripts for dev, build, and start.",
+      "tags": ["config", "node", "express", "dependencies"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:supermarket-server/prisma.config.ts",
+      "type": "config",
+      "name": "Prisma Config",
+      "filePath": "supermarket-server/prisma.config.ts",
+      "summary": "Configuration for the Prisma ORM, specifying the schema location and database connection string.",
+      "tags": ["config", "prisma", "database"],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:supermarket-server/prisma/init-schema.sql",
+      "type": "schema",
+      "name": "Database Init Schema",
+      "filePath": "supermarket-server/prisma/init-schema.sql",
+      "summary": "SQL script for initializing the PostgreSQL database schema, including tables for products, categories, and orders.",
+      "tags": ["sql", "database", "schema", "postgresql"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "schema:supermarket-server/prisma/schema.prisma",
+      "type": "schema",
+      "name": "Prisma Schema",
+      "filePath": "supermarket-server/prisma/schema.prisma",
+      "summary": "Main ORM schema defining data models and relationships for the application and Better Auth entities.",
+      "tags": ["prisma", "orm", "schema", "database"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:supermarket-server/src/app.ts",
+      "type": "file",
+      "name": "Express Application",
+      "filePath": "supermarket-server/src/app.ts",
+      "summary": "Core application setup, mounting auth handlers, routers for features (categories, products, orders), and middleware.",
+      "tags": ["entrypoint", "express", "router", "middleware"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:supermarket-server/src/features/auth/auth.router.ts",
+      "type": "file",
+      "name": "Auth Router",
+      "filePath": "supermarket-server/src/features/auth/auth.router.ts",
+      "summary": "Router for authentication endpoints and administrative access middleware.",
+      "tags": ["auth", "router", "middleware", "vsa"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:supermarket-server/src/features/auth/get-me.ts:getMe",
+      "type": "function",
+      "name": "getMe",
+      "filePath": "supermarket-server/src/features/auth/get-me.ts",
+      "summary": "Controller function to retrieve the current session information for the authenticated user.",
+      "tags": ["auth", "session", "controller"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-server/src/features/categories/categories.router.ts",
+      "type": "file",
+      "name": "Categories Router",
+      "filePath": "supermarket-server/src/features/categories/categories.router.ts",
+      "summary": "Router for category-related endpoints, managing access to category retrieval and creation.",
+      "tags": ["categories", "router", "vsa"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:supermarket-server/src/features/categories/create-category.ts:createCategory",
+      "type": "function",
+      "name": "createCategory",
+      "filePath": "supermarket-server/src/features/categories/create-category.ts",
+      "summary": "Action for creating a new product category using Prisma.",
+      "tags": ["categories", "controller", "write"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:supermarket-server/src/features/categories/get-categories.ts:getCategories",
+      "type": "function",
+      "name": "getCategories",
+      "filePath": "supermarket-server/src/features/categories/get-categories.ts",
+      "summary": "Action for retrieving all product categories from the database.",
+      "tags": ["categories", "controller", "read"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:supermarket-server/src/features/orders/create-order.ts:createOrder",
+      "type": "function",
+      "name": "createOrder",
+      "filePath": "supermarket-server/src/features/orders/create-order.ts",
+      "summary": "Action for creating a new customer order along with its associated line items.",
+      "tags": ["orders", "controller", "write"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:supermarket-server/src/features/orders/get-orders.ts:getOrders",
+      "type": "function",
+      "name": "getOrders",
+      "filePath": "supermarket-server/src/features/orders/get-orders.ts",
+      "summary": "Action for retrieving all orders, including nested order item details.",
+      "tags": ["orders", "controller", "read"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supermarket-server/src/features/orders/orders.router.ts",
+      "type": "file",
+      "name": "Orders Router",
+      "filePath": "supermarket-server/src/features/orders/orders.router.ts",
+      "summary": "Router for order-related endpoints, exposing order placement and admin retrieval.",
+      "tags": ["orders", "router", "vsa"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:supermarket-server/src/features/products/create-product.ts:createProduct",
+      "type": "function",
+      "name": "createProduct",
+      "filePath": "supermarket-server/src/features/products/create-product.ts",
+      "summary": "Action for adding a new product to the inventory via Prisma.",
+      "tags": ["products", "controller", "write"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:supermarket-server/src/features/products/delete-product.ts:deleteProduct",
+      "type": "function",
+      "name": "deleteProduct",
+      "filePath": "supermarket-server/src/features/products/delete-product.ts",
+      "summary": "Action for removing a product from the database.",
+      "tags": ["products", "controller", "write"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:supermarket-server/prisma.config.ts",
+      "target": "schema:supermarket-server/prisma/schema.prisma",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "file:supermarket-server/src/app.ts",
+      "target": "file:supermarket-server/src/features/categories/categories.router.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:supermarket-server/src/app.ts",
+      "target": "file:supermarket-server/src/features/products/products.router.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:supermarket-server/src/app.ts",
+      "target": "file:supermarket-server/src/features/orders/orders.router.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:supermarket-server/src/app.ts",
+      "target": "file:supermarket-server/src/features/auth/auth.router.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:supermarket-server/src/features/auth/auth.router.ts",
+      "target": "function:supermarket-server/src/features/auth/get-me.ts:getMe",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:supermarket-server/src/features/categories/categories.router.ts",
+      "target": "function:supermarket-server/src/features/categories/get-categories.ts:getCategories",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:supermarket-server/src/features/categories/categories.router.ts",
+      "target": "function:supermarket-server/src/features/categories/create-category.ts:createCategory",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:supermarket-server/src/features/orders/orders.router.ts",
+      "target": "function:supermarket-server/src/features/orders/create-order.ts:createOrder",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:supermarket-server/src/features/orders/orders.router.ts",
+      "target": "function:supermarket-server/src/features/orders/get-orders.ts:getOrders",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "function:supermarket-server/src/features/categories/create-category.ts:createCategory",
+      "target": "schema:supermarket-server/prisma/schema.prisma",
+      "type": "writes_to",
+      "weight": 0.5
+    },
+    {
+      "source": "function:supermarket-server/src/features/categories/get-categories.ts:getCategories",
+      "target": "schema:supermarket-server/prisma/schema.prisma",
+      "type": "reads_from",
+      "weight": 0.5
+    },
+    {
+      "source": "function:supermarket-server/src/features/orders/create-order.ts:createOrder",
+      "target": "schema:supermarket-server/prisma/schema.prisma",
+      "type": "writes_to",
+      "weight": 0.5
+    },
+    {
+      "source": "function:supermarket-server/src/features/orders/get-orders.ts:getOrders",
+      "target": "schema:supermarket-server/prisma/schema.prisma",
+      "type": "reads_from",
+      "weight": 0.5
+    },
+    {
+      "source": "function:supermarket-server/src/features/products/create-product.ts:createProduct",
+      "target": "schema:supermarket-server/prisma/schema.prisma",
+      "type": "writes_to",
+      "weight": 0.5
+    },
+    {
+      "source": "function:supermarket-server/src/features/products/delete-product.ts:deleteProduct",
+      "target": "schema:supermarket-server/prisma/schema.prisma",
+      "type": "writes_to",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.agents/skills/better-auth-best-practices/SKILL.md",
+      "target": "document:.agents/skills/better-auth-security-best-practices/SKILL.MD",
+      "type": "related",
+      "weight": 0.5
+    }
+  ]
+}
