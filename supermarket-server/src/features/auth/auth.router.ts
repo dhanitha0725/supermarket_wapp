@@ -1,6 +1,7 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import { fromNodeHeaders } from "better-auth/node";
 import { auth } from "../../lib/auth";
+import { getMe } from "./get-me";
 
 const router = Router();
 
@@ -26,17 +27,6 @@ export const adminOnly = async (req: Request, res: Response, next: NextFunction)
  * GET /api/auth/me
  * Returns current session info
  */
-router.get('/me', async (req: Request, res: Response) => {
-  const session = await auth.api.getSession({
-    headers: fromNodeHeaders(req.headers),
-  });
-  
-  if (!session) {
-    res.status(401).json({ error: 'Unauthorized' });
-    return;
-  }
-
-  res.json(session);
-});
+router.get('/me', getMe);
 
 export default router;
