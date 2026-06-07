@@ -4,31 +4,38 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { ShoppingBag, Lock } from 'lucide-react';
+import { signIn } from '@/lib/auth-client';
 
 export default function AdminLogin() {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
+    setError('');
+    
     try {
-      const response = await fetch('http://localhost:5000/api/admin/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password }),
+      const { data, error: authError } = await signIn.email({
+        email,
+        password,
       });
 
-      if (response.ok) {
-        const data = await response.json();
-        localStorage.setItem('adminToken', data.token);
-        navigate('/admin/dashboard');
-      } else {
-        setError('Invalid username or password');
+      if (authError) {
+        setError(authError.message || 'Invalid email or password');
+        return;
       }
-    } catch {
+
+      // Check if user is actually an admin (could also be done in ProtectedRoute)
+      // Better Auth handles the session cookie automatically
+      navigate('/admin/dashboard');
+    } catch (err) {
       setError('Failed to connect to server');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -47,12 +54,12 @@ export default function AdminLogin() {
         <CardContent className="p-8">
           <form onSubmit={handleLogin} className="space-y-6">
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-[#1E3932]">Username</label>
+              <label className="text-sm font-semibold text-[#1E3932]">Email</label>
               <Input
-                type="text"
-                placeholder="Enter username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                type="email"
+                placeholder="admin@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="rounded-xl border-[#006241]/20 focus-visible:ring-[#00754A]"
                 required
               />
@@ -69,8 +76,12 @@ export default function AdminLogin() {
               />
             </div>
             {error && <p className="text-red-500 text-sm font-medium">{error}</p>}
-            <Button type="submit" className="w-full bg-[#00754A] hover:bg-[#006241] text-white rounded-xl py-6 font-bold shadow-lg shadow-[#00754A]/20 transition-transform active:scale-95">
-              <Lock className="mr-2 h-4 w-4" /> Sign In
+            <Button 
+              type="submit" 
+              disabled={loading}
+              className="w-full bg-[#00754A] hover:bg-[#006241] text-white rounded-xl py-6 font-bold shadow-lg shadow-[#00754A]/20 transition-transform active:scale-95"
+            >
+              <Lock className="mr-2 h-4 w-4" /> {loading ? 'Signing In...' : 'Sign In'}
             </Button>
           </form>
         </CardContent>
