@@ -2,12 +2,17 @@ import { authClient } from "./auth-client";
 import { ok, err, ErrorCode } from "./result";
 import type { Result } from "./result";
 
+export type Session = typeof authClient.$Infer.Session;
+
+interface BetterAuthError {
+  status: number;
+  message?: string;
+}
+
 /**
  * Maps Better Auth error codes to our standard ErrorCodes
  */
-function mapAuthError(error: { status: number }): ErrorCode {
-  if (!error) return ErrorCode.UNKNOWN_ERROR;
-  
+function mapAuthError(error: BetterAuthError): ErrorCode {
   const status = error.status;
   switch (status) {
     case 401: return ErrorCode.UNAUTHORIZED;
@@ -18,21 +23,25 @@ function mapAuthError(error: { status: number }): ErrorCode {
 }
 
 export const authService = {
-  login: async (email: string, password: string): Promise<Result<any>> => {
+  login: async (email: string, password: string): Promise<Result<Awaited<ReturnType<typeof authClient.signIn.email>>['data']>> => {
     try {
-      const { data, error } = await authClient.signIn.email({
+      const result = await authClient.signIn.email({
         email,
         password,
       });
 
-      if (error) {
+      if (result.error) {
         return err(
-          mapAuthError(error),
-          error.message || 'Login failed'
+          mapAuthError(result.error),
+          result.error.message ?? 'Login failed'
         );
       }
 
-      return ok(data);
+      if (!result.data) {
+        return err(ErrorCode.UNKNOWN_ERROR, 'Login succeeded but no data returned');
+      }
+
+      return ok(result.data);
     } catch (e) {
       return err(
         ErrorCode.INTERNAL_ERROR,
@@ -47,7 +56,7 @@ export const authService = {
       if (error) {
         return err(
           mapAuthError(error),
-          error.message || 'Logout failed'
+          error.message ?? 'Logout failed'
         );
       }
       return ok(undefined);
@@ -59,16 +68,21 @@ export const authService = {
     }
   },
 
-  getSession: async (): Promise<Result<any>> => {
+  getSession: async (): Promise<Result<Session>> => {
     try {
-      const { data, error } = await authClient.getSession();
-      if (error) {
+      const result = await authClient.getSession();
+      if (result.error) {
         return err(
-          mapAuthError(error),
-          error.message || 'Failed to fetch session'
+          mapAuthError(result.error),
+          result.error.message ?? 'Failed to fetch session'
         );
       }
-      return ok(data);
+      
+      if (!result.data) {
+        return err(ErrorCode.UNAUTHORIZED, 'No active session found');
+      }
+
+      return ok(result.data);
     } catch (e) {
       return err(
         ErrorCode.INTERNAL_ERROR,
