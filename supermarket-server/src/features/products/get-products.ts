@@ -1,13 +1,19 @@
-import { Request, Response } from 'express';
+import { products, categories } from '@prisma/client';
 import prisma from '../../prisma';
+import { ok, Errors, Result } from '../../lib/result';
 
-export const getProducts = async (req: Request, res: Response) => {
+type ProductWithCategory = products & {
+  categories: categories;
+};
+
+export const getProducts = async (): Promise<Result<ProductWithCategory[]>> => {
   try {
-    const products = await prisma.products.findMany({
+    const productsList = await prisma.products.findMany({
       include: { categories: true }
-    });
-    res.json(products);
+    }) as ProductWithCategory[];
+    
+    return ok(productsList);
   } catch (error) {
-    res.status(500).json({ error: 'Failed to fetch products' });
+    return Errors.internal('Failed to fetch products');
   }
 };

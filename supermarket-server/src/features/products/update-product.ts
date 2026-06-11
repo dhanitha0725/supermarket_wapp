@@ -1,25 +1,36 @@
-import { Request, Response } from 'express';
+import { products, Prisma } from '@prisma/client';
 import prisma from '../../prisma';
+import { ok, Errors, Result } from '../../lib/result';
 
-export const updateProduct = async (req: Request, res: Response) => {
-  const { id } = req.params;
-  const { name, description, price, discount, imageUrl, categoryId, metadata, isAvailable } = req.body;
+export interface UpdateProductInput {
+  name?: string;
+  description?: string;
+  price?: number;
+  discount?: number;
+  imageUrl?: string;
+  categoryId?: string;
+  metadata?: any;
+  isAvailable?: boolean;
+}
+
+export const updateProduct = async (id: string, input: UpdateProductInput): Promise<Result<products>> => {
   try {
+    const data: Prisma.productsUpdateInput = {};
+    if (input.name !== undefined) data.name = input.name;
+    if (input.description !== undefined) data.description = input.description;
+    if (input.price !== undefined) data.price = new Prisma.Decimal(input.price);
+    if (input.discount !== undefined) data.discount = new Prisma.Decimal(input.discount);
+    if (input.imageUrl !== undefined) data.image_url = input.imageUrl;
+    if (input.categoryId !== undefined) data.category_id = input.categoryId;
+    if (input.metadata !== undefined) data.metadata = input.metadata;
+    if (input.isAvailable !== undefined) data.is_available = input.isAvailable;
+
     const product = await prisma.products.update({
-      where: { id: id as string },
-      data: {
-        name,
-        description,
-        price,
-        discount,
-        image_url: imageUrl,
-        category_id: categoryId,
-        metadata,
-        is_available: isAvailable
-      },
+      where: { id },
+      data,
     });
-    res.json(product);
+    return ok(product);
   } catch (error) {
-    res.status(500).json({ error: 'Failed to update product' });
+    return Errors.internal('Failed to update product');
   }
 };
