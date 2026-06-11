@@ -42,7 +42,7 @@ export function Header() {
               <ShoppingBag className="h-6 w-6" />
               <span className="absolute top-2 right-2 h-4 w-4 rounded-full bg-[#00754A] text-white text-[10px] font-bold flex items-center justify-center">3</span>
             </Button>
-            <Link to="/admin/login">
+            <Link to="/login">
               <Button variant="ghost" size="icon" className="text-[#1E3932] hover:bg-[#D4E9E2] rounded-full h-12 w-12 transition-transform active:scale-95">
                 <User className="h-6 w-6" />
               </Button>

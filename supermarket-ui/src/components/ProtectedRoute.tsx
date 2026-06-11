@@ -10,7 +10,7 @@ interface ProtectedRouteProps {
 
 const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
   requiredRole = 'admin',
-  redirectTo = '/admin/login',
+  redirectTo = '/login',
   children,
 }) => {
   const { data: session, isPending } = useSession();
