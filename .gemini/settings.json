@@ -3,6 +3,14 @@
     "better-auth": {
       "url": "https://mcp.better-auth.com/mcp",
       "type": "http"
+    },
+    "codegraph": {
+      "type": "stdio",
+      "command": "codegraph",
+      "args": [
+        "serve",
+        "--mcp"
+      ]
     }
   }
 }
